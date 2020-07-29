@@ -52,3 +52,21 @@ button {
 	background-color: transparent;
 	color: inherit;
 }
+
+
+input {
+	padding: 0;
+	border: none;
+	background-image: none;
+	background-color: transparent;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+input:focus {
+	padding: 0;
+	outline-offset: 0px;
+	outline: none;
+	font: inherit;
+}
