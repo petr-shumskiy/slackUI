@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SlackUI</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="fullscreen-wrapper">
+    <header class="header">
+      <div class="header__left-nav left-nav">
+        <span class="left-nav__history-icon">history</span>
+      </div>
+      <button type="button" class="header__search-menu search-menu">
+        <span class="search-menu__title">Search Ais</span> 
+        <span class="search-menu__search-icon">search</span>
+      </button>
+      <div class="header__right-nav right-nav">
+        <span class="right-nav__question-icon">question</span>
+      </div>
+    </header>
+
+    <div class="app">
+      <aside class="app__aside-panel aside-panel">
+        <button type="button" class="aside-panel__header aside-header pd20">
+          <div class="aside-header__info">
+            <h1 class="aside-panel__workspace-name">Ais</h1>
+            <span class="aside-panel__username">
+              Peter Shumskiy
+            </span>
+          </div>
+          <div class="aside-header__new-message">
+            <span class="new-message">new message</span>
+          </div>
+        </button>
+        <section class="aside-panel__top-section pd20">
+          <span class="aside-panel__item">Threads</span>
+          <span class="aside-panel__item">Mentions & reactions</span>
+          <span class="aside-panel__item">Show more</span>
+        </section>
+        <section class="aside-panel__channels pd20">
+          <span class="aside-panel__item">Channels</span>
+          <span class="aside-panel__item">Add a channel</span>
+        </section>
+        <section class="aside-panel__direct-messages pd20">
+          <span class="aside-panl__item">Direct messages</span>
+          <span class="aside-panl__item">Slackbot</span>
+          <span class="aside-panl__item">peter.shumskiy (you)</span>
+          <span class="aside-panl__item">Invite people</span>
+        </section>
+        <section class="aside-panel__apps pd20">
+          <span class="aside-panl__item">Apps</span>
+          <span class="aside-panl__item">Google Drive</span>
+        </section>
+      </aside>
+      <div class="app__chat chat">
+        <div class="chat__header pd20">
+
+          <div class="chat__channel-info">
+            <h3 class="chat__channel-name">
+              random
+            </h3>
+            <span class="chat__channel-topic">
+              634 | Non-work banter and water cooler conversation
+            </span>
+          </div>
+          <div class="chat__details">
+            <span class="chat-details">
+              Details
+            </span>
+          </div>
+
+        </div>
+        <div class="chat__messages message">
+          
+        </div>
+        <div class="chat__message-form">
+          <header>Message form</header>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
