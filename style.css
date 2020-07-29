@@ -37,7 +37,7 @@ html, body {
       -ms-flex-align: center;
           align-items: center;
   background: #350d36;
-  color: #bcabbc;
+  color: #FFFFFF;
 }
 
 .header__left-nav {
@@ -56,6 +56,23 @@ html, body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+.header .left-nav__history-icon {
+  padding: 2px;
+  display: block;
+  width: 22px;
+  height: 22px;
+  font-size: 22px;
+  text-align: center;
+  font-weight: lighter;
+  opacity: 0.8;
+  border-radius: 4px;
+}
+
+.header .left-nav__history-icon:hover {
+  opacity: 1;
+  background: #49254a;
 }
 
 .header__search-menu {
@@ -79,12 +96,24 @@ html, body {
   min-width: 0;
   max-width: 500px;
   padding: 0 8px;
+}
+
+.header .search-menu {
   border-radius: 4px;
   opacity: .8;
   background: #431e44;
   -webkit-box-shadow: inset 1px 1px 0 0 #684a68, inset -1px -1px 0 0 #684a68;
           box-shadow: inset 1px 1px 0 0 #684a68, inset -1px -1px 0 0 #684a68;
-  color: inherit;
+}
+
+.header .search-menu__search-icon {
+  margin-right: 3px;
+}
+
+.header .search-menu:hover {
+  opacity: 1;
+  -webkit-box-shadow: inset 1px 1px 0 0 #9a869b, inset -1px -1px 0 0 #9a869b;
+          box-shadow: inset 1px 1px 0 0 #9a869b, inset -1px -1px 0 0 #9a869b;
 }
 
 .header__right-nav {
@@ -92,6 +121,12 @@ html, body {
       -ms-flex: 1;
           flex: 1;
   min-width: 128px;
+  padding-right: 16px;
+  padding-left: 32px;
+  position: relative;
+}
+
+.header .right-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,10 +136,37 @@ html, body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding-right: 16px;
-  padding-left: 32px;
-  position: relative;
-  color: inherit;
+}
+
+.header .right-nav__question-icon-wrapper {
+  padding: 4px;
+  border-radius: 4px;
+  opacity: 0.8;
+}
+
+.header .right-nav__question-icon-wrapper:hover {
+  opacity: 1;
+  background: #49254a;
+}
+
+.header .right-nav__circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 16px;
+  height: 15px;
+  border: 1.5px solid #FFFFFF;
+  border-radius: 50%;
+}
+
+.header .right-nav__question-icon {
+  font-size: 11px;
 }
 
 .app {
@@ -281,7 +343,8 @@ html, body {
   border-radius: 4px;
 }
 
-.chat .message-form__input-text {
+.chat .message-form__input-text, .chat .message-form__input-text:focus {
+  padding: 10px;
   min-height: calc(40px - 10px - 10px);
   font: inherit;
 }
