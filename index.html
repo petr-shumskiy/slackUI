@@ -5,10 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SlackUI</title>
   <link rel="stylesheet" href="reset.css">
-  <link rel="icon" type="image/png" href="/slack_hash_256.png">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="/slack_hash_256.png">
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 <body>
   <div class="fullscreen-wrapper">
@@ -31,10 +33,16 @@
 
     <div class="app">
       <aside class="app__aside-panel aside-panel">
-        <button type="button" class="aside-panel__header aside-header pd20">
+
+        <!-- Aside panel header -->
+        
+        <button type="button" class="aside-panel__header aside-header">
           <div class="aside-header__info">
-            <h1 class="aside-panel__workspace-name">Ais</h1>
-            <div class="">
+            <div class="aside-header__workspace-name">
+              <h1 class="aside-header__workspace-title">Ais</h1>
+              <i class="fa fa-angle-down aside-panel__caret-angle-icon"></i>
+            </div>
+            <div class="aside-header__workspace-user-name">
               <i class="fa fa-circle aside-panel__circle-icon"></i>
               <span class="aside-panel__username">
                 Peter Shumskiy
@@ -45,80 +53,96 @@
             <i class="fa fa-pencil-square-o aside-header__pencil-icon"></i>
           </div>
         </button>
-        <section class="aside-panel__top-section pd20">
+        <section class="aside-panel__top-section">
           <div class="aside-panel__item">
             <i class="fa fa-commenting-o fa-flip-horizontal aside-panel__comment-icon"></i>
-            <span>Threads</span>
+            <span class="item__text">Threads</span>
           </div>
-          
           <div class="aside-panel__item">
             <i class="fa fa-at aside-panel__at-icon"></i>
-            <span>Mentions & reactions</span>
+            <span class="item__text">Mentions & reactions</span>
           </div>
-          <div class="aside-panel__item">
-            <i class="fa fa-arrow-down aside-panel__arrow-down-icon"></i>
-           <span>Show more</span>
+          <div class="aside-panel__item aside-panel__item_last">
+            <i class="material-icons aside-panel__arrow-down-icon">arrow_downward</i>
+           <span class="item__text">Show more</span>
           </div>
         </section>
-        <section class="aside-panel__channels pd20">
-          <div class="aside-panel__item">
-            <i class="fa fa-caret-down aside-panel__caret-down-icon"></i>
-            <span>Channels</span>
+
+        <!-- Channels -->
+
+        <section class="aside-panel__channels">
+          <div class="aside-panel__item aside-panel__item_functional">
+            <div>
+              <i class="fa fa-caret-down aside-panel__caret-down-icon"></i>
+              <span class="item__text">Channels</span>
+            </div>
+            <i class="material-icons aside-panel__plus-material-icon">add</i>
           </div>
-          <div class="aside-panel__item">
+          <div class="aside-panel__item aside-panel__item_tabed">
             <span>#</span>
-            <span>general</span>
+            <span class="item__text">general</span>
           </div>
-          <div class="aside-panel__item">
+          <div class="aside-panel__item aside-panel__item_tabed">
             <span>#</span>
-            <span>questions</span>
+            <span class="item__text">questions</span>
           </div>
-          <div class="aside-panel__item">
+          <div class="aside-panel__item aside-panel__item_tabed">
             <span>#</span>
-            <span>random</span>
+            <span class="item__text">random</span>
           </div>
-          <div class="aside-panel__item">
+          <div class="aside-panel__item aside-panel__item_tabed">
             <span>#</span>
-            <span>task1</span>
+            <span class="item__text item__text_bold">task1</span>
           </div>
-          <div class="aside-panel__item">
+          <div class="aside-panel__item aside-panel__item_tabed aside-panel__item_last">
             <i class="fa fa-lock aside-panel__lock-icon"></i>
-            <span>task2</span>
-          </div>
-          <div>
-            <i class="fa fa-plus aside-panel__plus-icon"></i>
-            <span>Add a channel</span>
+            <span class="item__text item__text_bold">task2</span>
           </div>
         </section>
-        <section class="aside-panel__direct-messages pd20">
-          <div class="aside-panl__item">
-            <i class="fa fa-caret-down aside-panel__caret-down-icon"></i>
-            <span>Direct messages</span>
+
+        <!-- Direct messages -->
+
+        <section class="aside-panel__direct-messages">
+          <div class="aside-panel__item aside-panel__item_functional">
+            <div>
+              <i class="fa fa-caret-down aside-panel__caret-down-icon"></i>
+              <span class="item__text">Direct messages</span>
+            </div>
+            <i class="material-icons aside-panel__plus-material-icon">add</i>
           </div>
-          <div class="aside-panl__item">
+          <div class="aside-panel__item aside-panel__item_tabed">
             <i class="fa fa-heart aside-panel__heart-icon"></i>
-            <span>Slackbot</span>
+            <span class="item__text">Slackbot</span>
           </div>
-          <div class="aside-panl__item">
+          <div class="aside-panel__item aside-panel__item_tabed">
             <i class="fa fa-circle aside-panel__circle-icon"></i>
-            <span>peter.shumskiy (you)</span>
+            <span class="item__text">peter.shumskiy (you)</span>
           </div>
-          <div class="aside-panl__item">
-            <i class="fa fa-plus aside-panel__plus-icon"></i>
-            <span>Invite people</span>
+          <div class="aside-panel__item aside-panel__item_tabed aside-panel__item_last">
+            <i class="material-icons aside-panel__plus-icon">add</i>
+            <span class="item__text">Invite people</span>
           </div>
         </section>
-        <section class="aside-panel__apps pd20">
-          <div class="aside-panl__item">
-            <i class="fa fa-caret-down aside-panel__caret-down-icon"></i>
-            <span>Apps</span>
+
+        <!-- Apps -->
+
+        <section class="aside-panel__apps">
+          <div class="aside-panel__item aside-panel__item_functional">
+            <div>
+              <i class="fa fa-caret-down aside-panel__caret-down-icon"></i>
+              <span class="item__text">Apps</span>
+            </div>
+            <i class="material-icons aside-panel__plus-icon_big">add</i>
           </div>
-          <div class="aside-panl__item">
+          <div class="aside-panel__item aside-panel__item_tabed aside-panel__item_last">
             <i class="fa fa-circle aside-panel__circle-icon"></i>
-            <span>Google Drive</span>
+            <span class="item__text">Google Drive</span>
           </div>
         </section>
       </aside>
+
+      <!-- Chat -->
+
       <div class="app__chat chat">
         <div class="chat__header pd20">
 
