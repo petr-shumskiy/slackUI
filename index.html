@@ -6,6 +6,7 @@
   <title>SlackUI</title>
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="chat-messages.css">
   <link rel="icon" type="image/png" href="/slack_hash_256.png">
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -175,18 +176,31 @@
             </span>
           </div>
 
+          <!-- Messages area -->
+
         </div>
-        <div class="chat__messages pd20">
+        <div class="chat__message">
           <div class="chat__message message">
             <div class="message__user-avatar">
               <img src="/img//01.jpg" width="36px" height="36px" alt="" class="message__user-avatar-01">
             </div>
-            <div class="message__info">
-              <h3 class="message__author">Petr Shumskiy</h3>
+            <div class="message__content">
+              <div class="message__header">
+                <h3 class="message__author">Petr Shumskiy</h3>
+                <span class="message__time-send">1:45 PM</span>
+              </div>
               <p class="message__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, obcaecati!</p>
               <div class="message__reactions reactions">
-                <span class="reactions__like">like</span>
-                <span class="reactions__add-reaction">add-reaction</span>
+                <div class="reactions__reaction">
+                  <img class="reactions__emoji_small" src="https://a.slack-edge.com/production-standard-emoji-assets/10.2/google-small/1f44d@2x.png" alt="">
+                  <span class="reactions__counter">7</span>
+                </div>
+                <div class="reactions__reaction">
+                  <i class="material-icons reactions__face-icon">tag_faces</i> 
+                </div>
+                <div class="reactions__add-reaction">
+                  add-reaction
+                </div>
               </div>
             </div>
           </div> 

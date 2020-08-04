@@ -609,10 +609,6 @@ html, body {
   display: flex;
 }
 
-.chat .message__user-avatar {
-  padding: 5px;
-}
-
 .chat .message__info {
   display: -webkit-box;
   display: -ms-flexbox;
