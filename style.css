@@ -181,7 +181,6 @@ html, body {
 
 .app__aside-panel {
   min-width: calc(260px);
-  max-height: calc(100vh - 38px);
 }
 
 .app__chat {
@@ -191,6 +190,7 @@ html, body {
 }
 
 .app .aside-panel {
+  max-height: calc(100vh - 38px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -200,7 +200,7 @@ html, body {
           flex-direction: column;
   background: #3f0e40;
   color: #bcabbc;
-  overflow-y: hidden;
+  overflow-y: scroll;
   position: relative;
 }
 
@@ -419,7 +419,6 @@ html, body {
 }
 
 .chat {
-  min-height: calc(100vh - 38px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -441,7 +440,7 @@ html, body {
   -webkit-box-flex: 1;
       -ms-flex: auto;
           flex: auto;
-  max-height: calc(100vh - 64px - 109px - 38px - 2px);
+  max-height: calc(100vh - 38px - 65px - 109px - 2px);
   overflow-y: scroll;
   font-size: 25px;
 }
