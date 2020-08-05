@@ -1,0 +1,100 @@
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__channel-meta {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__channel-name {
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    font-weight: 900;
+  }
+
+  &__title_text {
+    margin-left: 1px;
+    margin-right: 4px;
+  }
+
+  &__star-icon {
+    padding: 1px;
+    font-size: 13px;
+    opacity: .7;
+  }
+
+  &__channel-topic {
+    font-size: 13px;
+    opacity: .7;
+  }
+
+  &__details {
+    display: flex;
+    align-items: center;
+    opacity: .7;
+    font-weight: 700;
+    font-size: 13px;
+  }
+
+  &__details-icon {
+    padding: 1px;
+    margin-right: 5px;
+    font-size: 22px;
+  }
+
+  &__meta-bottom {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    opacity: .7;
+  }
+
+  &__number-of-people {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 39px;
+  }
+
+  &__vertical-line {
+    opacity: .5;
+    margin-right: 6px;
+    margin-left: 6px;
+  }
+
+  &__channel-describe {
+    display: flex;
+    align-items: center;
+    padding: 2px;
+  }
+
+  &__description-wrapper {
+    padding: 4px 4px;
+    margin: -4px -4px;
+  }
+
+  &__channel-describe:hover .chat-header__edit {
+    display: inline-block;
+  }
+
+  &__channel-describe:hover .chat-header__description-wrapper {
+    background: rgba(var(--sk_primary_background,255,255,255),1);
+    --saf-0: rgba(var(--sk_foreground_low,29,28,29),0.13);
+    box-shadow: inset 0 0 0 1px var(--saf-0),0 1px 1px 0 rgba(0,0,0,.05);
+    border-radius: 4px
+  }
+
+  &__edit {
+    display: none;
+    margin-left: 7px;
+    color: rgba(var(--sk_highlight,18,100,163),1);
+  }
+  &__edit:hover {
+    text-decoration: underline;
+  }
+}

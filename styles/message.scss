@@ -1,0 +1,16 @@
+.message {
+  display: flex;
+
+  &__user-avatar {
+    padding: 5px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 1.46668;
+  }
+}

@@ -1,0 +1,13 @@
+.app {
+  flex: auto;
+  display:  flex;
+  color: #FFFFFF;
+
+  &__aside-panel {
+    min-width: calc(260px);
+  }
+
+  &__chat {
+    flex: auto;
+  }
+}

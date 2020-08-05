@@ -1,0 +1,20 @@
+.app {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #FFFFFF;
+}
+
+.app__aside-panel {
+  min-width: calc(260px);
+}
+
+.app__chat {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+}
+/*# sourceMappingURL=app.css.map */

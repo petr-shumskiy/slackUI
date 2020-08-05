@@ -1,0 +1,43 @@
+.aside-header {
+  padding-left: 12px;
+  padding-right: 15px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+
+  &__info {
+    padding-left: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__workspace-name {
+    display: flex;
+  } 
+
+  &__workspace-title {
+    margin-right: 5px;
+    font-weight: bold;
+    color: #FFFFFF;
+  }
+
+  &__workspace-user-name {
+    padding-top: 3px;
+  }
+
+  &__new-message{
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    color: black;
+    border-radius: 50%;
+  }
+
+  &__pencil-icon {
+    font-size: 15px; 
+  }
+}
