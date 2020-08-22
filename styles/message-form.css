@@ -1,0 +1,80 @@
+.message-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid black;
+  border-bottom: none;
+  border-radius: 4px;
+  z-index: 10;
+}
+
+.message-form__input-text, .message-form__input-text:focus {
+  padding: 10px;
+  min-height: calc(40px - 10px - 10px);
+  font: inherit;
+}
+
+.message-form__text-editing-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: calc(40px - 10px - 10px);
+  border-top: 1px solid rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  background: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
+  background-clip: padding-box;
+  border-bottom: 1px solid black;
+  border-radius: 4px;
+}
+
+.message-form__left-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.message-form__right-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.message-form__icon-wrapper {
+  height: 36px;
+  width: 36px;
+  margin-right: 1px;
+  color: rgba(var(--sk_primary_foreground, 29, 28, 29), 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.message-form__icon-wrapper:hover {
+  background: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+  color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+  border-radius: 2px;
+  -webkit-transition: opacity .2s, background-color .2s, color .2s;
+  transition: opacity .2s, background-color .2s, color .2s;
+}
+
+.message-form__icon-wrapper:focus {
+  background: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  border-radius: 2px;
+}
+
+.message-form__attachment-icon {
+  font-size: 17px;
+}
+/*# sourceMappingURL=message-form.css.map */

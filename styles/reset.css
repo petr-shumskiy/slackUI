@@ -53,6 +53,13 @@ button {
 	color: inherit;
 }
 
+button:focus {
+	outline: none;
+	border-style: none;
+	background-color: transparent;
+	color: inherit;
+}
+
 
 input {
 	padding: 0;

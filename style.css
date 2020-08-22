@@ -200,7 +200,7 @@ html, body {
           flex-direction: column;
   background: #3f0e40;
   color: #bcabbc;
-  overflow-y: scroll;
+  overflow-y: hidden;
   position: relative;
 }
 
@@ -217,6 +217,10 @@ html, body {
   -webkit-box-shadow: inset 0 1px 0 0 #684a68, inset 0 -1px 0 0 #684a68;
           box-shadow: inset 0 1px 0 0 #684a68, inset 0 -1px 0 0 #684a68;
   color: inherit;
+}
+
+.aside-panel__header:hover {
+  background-color: #350d36;
 }
 
 .aside-panel__plus-icon {
@@ -241,10 +245,12 @@ html, body {
 
 .aside-panel__circle-icon {
   font-size: 10px;
+  color: #2BAC76;
 }
 
 .aside-panel__heart-icon {
   font-size: 12px;
+  color: #2BAC76;
 }
 
 .aside-panel__lock-icon {
@@ -256,8 +262,6 @@ html, body {
 }
 
 .aside-panel__top-section {
-  padding-right: 19px;
-  padding-left: 19px;
   padding-top: 13px;
   padding-bottom: 16px;
   display: -webkit-box;
@@ -275,8 +279,6 @@ html, body {
 }
 
 .aside-panel__channels {
-  padding-right: 19px;
-  padding-left: 19px;
   padding-top: 19px;
   padding-bottom: 16px;
   display: -webkit-box;
@@ -292,8 +294,6 @@ html, body {
 }
 
 .aside-panel__direct-messages {
-  padding-right: 19px;
-  padding-left: 19px;
   padding-top: 2px;
   padding-bottom: 0;
   display: -webkit-box;
@@ -309,10 +309,7 @@ html, body {
 }
 
 .aside-panel__apps {
-  padding-right: 19px;
-  padding-left: 19px;
-  padding-top: 20px;
-  padding-bottom: 0px;
+  padding: 20px 0px 0px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -326,20 +323,23 @@ html, body {
 }
 
 .aside-panel__item {
-  padding: 3px;
+  padding: 3px 19px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .aside-panel__item_tabed {
-  padding-left: 4px;
+  padding-right: 19px;
+  padding-left: 37px;
 }
 
 .aside-panel__item_functional {
+  padding-right: 19px;
+  padding-left: 19px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -510,6 +510,13 @@ html, body {
   height: calc(109px - 20px);
 }
 
+.chat__message-reaction {
+  position: absolute;
+  top: -16px;
+  right: 17px;
+  z-index: 1;
+}
+
 .chat-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -536,9 +543,9 @@ html, body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 .chat-header__title {
@@ -659,6 +666,10 @@ html, body {
   position: relative;
 }
 
+.message_first {
+  margin-top: 12px;
+}
+
 .message__user-avatar {
   padding-right: 7px;
   padding-top: 5px;
@@ -720,6 +731,13 @@ html, body {
   border-radius: 12px;
 }
 
+.reactions__reaction:hover {
+  --saf-0: rgba(var(--sk_foreground_high,29,28,29),0.5);
+  -webkit-box-shadow: inset 0 0 0 1px var(--saf-0);
+          box-shadow: inset 0 0 0 1px var(--saf-0);
+  background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+}
+
 .reactions__reaction_add {
   padding: 2px 8px;
 }
@@ -742,6 +760,51 @@ html, body {
   background: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
 }
 
+.message:hover .message-reaction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.message-reaction {
+  background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+  line-height: 1;
+  margin-left: 8px;
+  border: unset;
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
+  --saf-0: rgba(var(--sk_foreground_low,29,28,29),0.13);
+  -webkit-box-shadow: 0 0 0 1px var(--saf-0), 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+          box-shadow: 0 0 0 1px var(--saf-0), 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+  display: none;
+  padding: 2px;
+  border-radius: .375em;
+}
+
+.message-reaction__icon-wrapper {
+  height: 32px;
+  width: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: rgba(var(--sk_primary_foreground, 29, 28, 29), 0.7);
+}
+
+.message-reaction__icon-wrapper:hover {
+  background: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+  color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+}
+
+.message-reaction__icon {
+  font-size: 15px;
+}
+
 .message-form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -751,7 +814,9 @@ html, body {
       -ms-flex-direction: column;
           flex-direction: column;
   border: 1px solid black;
+  border-bottom: none;
   border-radius: 4px;
+  z-index: 10;
 }
 
 .message-form__input-text, .message-form__input-text:focus {
@@ -770,5 +835,53 @@ html, body {
   min-height: calc(40px - 10px - 10px);
   border-top: 1px solid rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
   background: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
+  background-clip: padding-box;
+  border-bottom: 1px solid black;
+  border-radius: 4px;
+}
+
+.message-form__left-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.message-form__right-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.message-form__icon-wrapper {
+  height: 36px;
+  width: 36px;
+  margin-right: 1px;
+  color: rgba(var(--sk_primary_foreground, 29, 28, 29), 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.message-form__icon-wrapper:hover {
+  background: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+  color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+  border-radius: 2px;
+  -webkit-transition: opacity .2s, background-color .2s, color .2s;
+  transition: opacity .2s, background-color .2s, color .2s;
+}
+
+.message-form__icon-wrapper:focus {
+  background: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  border-radius: 2px;
+}
+
+.message-form__attachment-icon {
+  font-size: 17px;
 }
 /*# sourceMappingURL=style.css.map */

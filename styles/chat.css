@@ -80,4 +80,11 @@
   padding-top: 0;
   height: calc(109px - 20px);
 }
+
+.chat__message-reaction {
+  position: absolute;
+  top: -16px;
+  right: 17px;
+  z-index: 1;
+}
 /*# sourceMappingURL=chat.css.map */

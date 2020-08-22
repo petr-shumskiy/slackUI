@@ -6,7 +6,7 @@
   flex-direction: column;
   background: #3f0e40;
   color: rgb(188, 171, 188);
-  overflow-y: scroll;
+  overflow-y: hidden;
 
   position: relative;
 
@@ -17,6 +17,10 @@
     box-shadow: inset 0 1px 0 0 rgb(104,74,104),
                 inset 0 -1px 0 0 rgb(104,74,104);
     color: inherit;
+  }
+
+  &__header:hover {
+    background-color: #350d36;
   }
 
   &__plus-icon {
@@ -32,9 +36,12 @@
   }
   &__circle-icon {
     font-size: 10px;
+    color: #2BAC76;
+
   }
   &__heart-icon {
     font-size: 12px;
+    color: #2BAC76;
   }
   &__lock-icon {
     font-size: 13px;
@@ -44,8 +51,6 @@
   }
 
   &__top-section {
-    padding-right: 19px;
-    padding-left: 19px;
     padding-top: 13px;
     padding-bottom: 16px;
     display: flex;  
@@ -55,8 +60,6 @@
   }
 
   &__channels {
-    padding-right: 19px;
-    padding-left: 19px;
     padding-top: 19px;
     padding-bottom: 16px;
     display: flex;
@@ -65,8 +68,6 @@
   }
 
   &__direct-messages {
-    padding-right: 19px;
-    padding-left: 19px;
     padding-top: 2px;
     padding-bottom: 0;
     display: flex;
@@ -75,27 +76,27 @@
   }
 
   &__apps {
-    padding-right: 19px;
-    padding-left: 19px;
-    padding-top:  20px;
-    padding-bottom: 0px;
+    padding: 20px 0px 0px 0px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
 
   &__item {
-    padding: 3px;
+    padding: 3px 19px;
     display: flex;
-    align-items: baseline;
+    align-items: center;
   }
 
   &__item_tabed {
-    padding-left: 4px;
+    padding-right: 19px;
+    padding-left: 37px;
   }
 
 
   &__item_functional {
+    padding-right: 19px;
+    padding-left: 19px;
     display: flex;
     justify-content: space-between;
   }
