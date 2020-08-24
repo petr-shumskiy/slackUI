@@ -34,11 +34,32 @@
   }
 
   &__details {
+    height: 36px;
+    width: 36px;
+    border-radius: 4px;
+
     display: flex;
     align-items: center;
     opacity: .7;
     font-weight: 700;
     font-size: 13px;
+  }
+
+  &__details:hover {
+    opacity: 1;
+    background: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+    color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+    border-radius: 2px;
+    transition: opacity .2s, background-color .2s, color .2s;
+  }
+
+  &__details:focus {
+    background: rgba(var(--sk_foreground_low,29,28,29),.13);
+    border-radius: 2px;
+  }
+
+  &__details:focus .chat-header {
+    background-color: !important green;
   }
 
   &__details-icon {

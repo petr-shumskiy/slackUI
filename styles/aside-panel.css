@@ -32,11 +32,34 @@
   background-color: #350d36;
 }
 
+.aside-panel__icon-wrapper {
+  width: 26px;
+  height: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 4px;
+}
+
+.aside-panel__icon-wrapper_hoverable:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
 .aside-panel__plus-icon {
   font-size: 14px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+.aside-panel__plus-icon-wrapper {
+  margin-left: auto;
 }
 
 .aside-panel__plus-material-icon {
@@ -68,6 +91,32 @@
 
 .aside-panel__at-icon {
   font-size: 17px;
+}
+
+.aside-panel__times-icon-wrapper {
+  height: 22px;
+  width: 22px;
+  margin-right: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  display: none;
+  opacity: 0.64;
+}
+
+.aside-panel__times-icon-wrapper:hover {
+  opacity: 1;
+}
+
+.aside-panel__times-icon {
+  font-size: 19px;
 }
 
 .aside-panel__top-section {
@@ -139,6 +188,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font: inherit;
 }
 
 .aside-panel__item_tabed {
@@ -152,9 +202,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .aside-panel__item_last {
@@ -165,8 +215,29 @@
   background-color: #350d36;
 }
 
+.aside-panel__item:focus {
+  background-color: #1164A3;
+  color: #FFFFFF;
+}
+
 .aside-panel__item_functional:hover {
   background-color: transparent;
+}
+
+.aside-panel__item_no-background:hover {
+  color: #FFFFFF;
+  background: transparent;
+}
+
+.aside-panel__item_no-background:focus {
+  background-color: inherit;
+  color: #FFFFFF;
+}
+
+.aside-panel__item_deletable:hover .aside-panel__times-icon-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .item__text {

@@ -1,0 +1,9 @@
+TODO scrollbar for #asdie_panel 
+TODO change cursor #aside_panel
+TODO pixel_perfect 
+
+TODO hoverable icon details #app_header
+
+TODO custom scroll bar #message_area
+TODO attachments #message_area
+TODO replies #message_area

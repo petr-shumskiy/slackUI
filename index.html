@@ -10,8 +10,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-
 </head>
+  
 <body>
   <div class="fullscreen-wrapper">
     <header class="header">
@@ -26,12 +26,12 @@
         <div class="right-nav__question-icon-wrapper">
           <div class="right-nav__circle">
             <span class="fa fa-question right-nav__question-icon"></span>
-         </div>
+        </div>
       </div>
     </div>
     </header>
 
-    <div class="app">
+  <div class="app">
       <aside class="app__aside-panel aside-panel">
 
         <!-- Aside panel header -->
@@ -53,74 +53,102 @@
             <i class="fa fa-pencil-square-o aside-header__pencil-icon"></i>
           </div>
         </button>
+
+        <!-- Aside panel top section -->
+
         <section class="aside-panel__top-section">
-          <div class="aside-panel__item">
-            <i class="fa fa-commenting-o fa-flip-horizontal aside-panel__comment-icon"></i>
+          <button class="aside-panel__item">
+            <div class="aside-panel__icon-wrapper">
+              <i class="fa fa-commenting-o fa-flip-horizontal aside-panel__comment-icon"></i>
+            </div>
             <span class="item__text">Threads</span>
-          </div>
-          <div class="aside-panel__item">
-            <i class="fa fa-at aside-panel__at-icon"></i>
+          </button>
+          <button class="aside-panel__item">
+            <div class="aside-panel__icon-wrapper">
+              <i class="fa fa-at aside-panel__at-icon"></i>
+            </div>
             <span class="item__text">Mentions & reactions</span>
-          </div>
-          <div class="aside-panel__item aside-panel__item_last">
-            <i class="material-icons aside-panel__arrow-down-icon">arrow_downward</i>
-           <span class="item__text">Show more</span>
-          </div>
+          </button>
+          <button class="aside-panel__item">
+            <div class="aside-panel__icon-wrapper">
+              <i class="fa fa-files-o aside-panel__draft-icon"></i>
+            </div>
+            <span class="item__text">Drafts</span>
+          </button>
+          <button class="aside-panel__item aside-panel__item_last aside-panel__item_no-background">
+            <div class="aside-panel__icon-wrapper">
+              <i class="fa fa-ellipsis-v aside-panel__arrow-down-icon"></i>
+            </div>
+          <span class="item__text">More</span>
+          </button>
         </section>
 
         <!-- Channels -->
 
         <section class="aside-panel__channels">
           <div class="aside-panel__item aside-panel__item_functional">
-            <div>
-              <i class="fa fa-caret-down aside-panel__caret-down-icon"></i>
-              <span class="item__text">Channels</span>
-            </div>
-            <i class="material-icons aside-panel__plus-material-icon">add</i>
+              <div class="aside-panel__icon-wrapper aside-panel__icon-wrapper_hoverable">
+                <i class="fa fa-caret-down aside-panel__caret-down-icon"></i>
+              </div>
+                <span class="item__text">Channels</span>
+              <div class="aside-panel__icon-wrapper aside-panel__icon-wrapper_hoverable aside-panel__plus-icon-wrapper">
+                <i class="material-icons aside-panel__plus-material-icon">add</i>
+              </div>
           </div>
-          <div class="aside-panel__item aside-panel__item_tabed">
+          <button class="aside-panel__item aside-panel__item_tabed">
             <span>#</span>
             <span class="item__text">general</span>
-          </div>
-          <div class="aside-panel__item aside-panel__item_tabed">
+          </button>
+          <button class="aside-panel__item aside-panel__item_tabed">
             <span>#</span>
             <span class="item__text">questions</span>
-          </div>
-          <div class="aside-panel__item aside-panel__item_tabed">
+          </button>
+          <button class="aside-panel__item aside-panel__item_tabed">
             <span>#</span>
             <span class="item__text">random</span>
-          </div>
-          <div class="aside-panel__item aside-panel__item_tabed">
+          </button>
+          <button class="aside-panel__item aside-panel__item_tabed">
             <span>#</span>
             <span class="item__text item__text_bold">task1</span>
-          </div>
-          <div class="aside-panel__item aside-panel__item_tabed aside-panel__item_last">
+          </button>
+          <button class="aside-panel__item aside-panel__item_tabed aside-panel__item_last">
             <i class="fa fa-lock aside-panel__lock-icon"></i>
             <span class="item__text item__text_bold">task2</span>
-          </div>
+          </button>
         </section>
 
         <!-- Direct messages -->
 
         <section class="aside-panel__direct-messages">
           <div class="aside-panel__item aside-panel__item_functional">
-            <div>
+            <div class="aside-panel__icon-wrapper aside-panel__icon-wrapper_hoverable">
               <i class="fa fa-caret-down aside-panel__caret-down-icon"></i>
-              <span class="item__text">Direct messages</span>
             </div>
-            <i class="material-icons aside-panel__plus-material-icon">add</i>
+            <span class="item__text">Direct messages</span>
+            <div class="aside-panel__icon-wrapper aside-panel__icon-wrapper_hoverable aside-panel__plus-icon-wrapper">
+              <i class="material-icons aside-panel__plus-material-icon">add</i>
+            </div>
           </div>
-          <div class="aside-panel__item aside-panel__item_tabed">
+          <button class="aside-panel__item aside-panel__item_tabed aside-panel__item_deletable">
             <i class="fa fa-heart aside-panel__heart-icon"></i>
             <span class="item__text">Slackbot</span>
-          </div>
-          <div class="aside-panel__item aside-panel__item_tabed">
+            <div class="aside-panel__icon-wrapper aside-panel__times-icon-wrapper">
+              <i class="material-icons aside-panel__times-icon">clear</i>
+            </div>
+          </button>
+          <button class="aside-panel__item aside-panel__item_tabed aside-panel__item_deletable">
             <i class="fa fa-circle aside-panel__circle-icon"></i>
             <span class="item__text">peter.shumskiy (you)</span>
-          </div>
-          <div class="aside-panel__item aside-panel__item_last">
+            <div class="aside-panel__icon-wrapper aside-panel__times-icon-wrapper">
+              <i class="material-icons aside-panel__times-icon">clear</i>
+            </div>
+          </button>
+          <div class="aside-panel__item aside-panel__item_last aside-panel__item_deletable">
             <i class="material-icons aside-panel__plus-icon">add</i>
             <span class="item__text">Invite people</span>
+            <div class="aside-panel__icon-wrapper aside-panel__times-icon-wrapper">
+              <i class="material-icons aside-panel__times-icon">clear</i>
+            </div>
           </div>
         </section>
 
@@ -128,24 +156,29 @@
 
         <section class="aside-panel__apps">
           <div class="aside-panel__item aside-panel__item_functional">
-            <div>
+            <div class="aside-panel__icon-wrapper aside-panel__icon-wrapper_hoverable">
               <i class="fa fa-caret-down aside-panel__caret-down-icon"></i>
-              <span class="item__text">Apps</span>
             </div>
-            <i class="material-icons aside-panel__plus-icon_big">add</i>
+            <span class="item__text">Apps</span>
+            <div class="aside-panel__icon-wrapper aside-panel__icon-wrapper_hoverable aside-panel__plus-icon-wrapper">
+              <i class="material-icons aside-panel__plus-material-icon">add</i>
+            </div>
           </div>
-          <div class="aside-panel__item aside-panel__item_tabed aside-panel__item_last">
+          <button class="aside-panel__item aside-panel__item_tabed aside-panel__item_last aside-panel__item_deletable">
             <i class="fa fa-circle aside-panel__circle-icon"></i>
             <span class="item__text">Google Drive</span>
-          </div>
+            <div class="aside-panel__icon-wrapper aside-panel__times-icon-wrapper">
+              <i class="material-icons aside-panel__times-icon">clear</i>
+            </div>
+          </button>
         </section>
       </aside>
 
-      <!-- Chat -->
+    <!-- Chat -->
 
       <div class="app__chat chat">
 
-        <!-- Header -->
+      <!-- Header -->
 
         <div class="chat__header chat-header pd20">
           <div class="chat-header__channel-meta">
@@ -170,12 +203,9 @@
               </div>
             </div>
           </div>
-          <div class="chat-header__details">
+          <button class="chat-header__details">
             <i class="material-icons chat-header__details-icon">info_outline</i> 
-            <span class="chat-header__details-text">
-              Details
-            </span>
-          </div>
+          </button>
 
           <!-- Messages area -->
 
@@ -188,7 +218,390 @@
               Friday,June 26th
             </button>
 
-            <div class="chat__message message message_first">
+              <div class="chat__message message message_first">
+                <div class="message__user-avatar">
+                  <img src="/img//01.jpg" width="36px" height="36px" alt="" class="message__user-avatar-01">
+                </div>
+                <div class="message__content">
+                  <div class="message__header">
+                    <h3 class="message__author">Petr Shumskiy</h3>
+                    <span class="message__time-send">1:45 PM</span>
+                  </div>
+                  <p class="message__text">
+                    Так много кандидатов на frontend)))<br>
+                    А матёрые бэкэндеры на месте?)
+                  </p>
+                  <div class="message__reactions reactions">
+                    <div class="reactions__reaction">
+                      <img class="reactions__emoji_small" src="https://a.slack-edge.com/production-standard-emoji-assets/10.2/google-small/1f44d@2x.png" alt="">
+                      <span class="reactions__counter">7</span>
+                    </div>
+                    <div class="reactions__reaction">
+                      <img class="reactions__emoji_small" src="https://emoji.slack-edge.com/T015KT4HMFG/party_parrot/6d45a1c074928b60.gif" alt="">
+                      <span class="reactions__counter">2</span>
+                    </div>
+                    <div class="reactions__reaction reactions__reaction_add">
+                      <i class="material-icons reactions__face-icon">tag_faces</i> 
+                    </div>
+                  </div>
+                </div>
+
+                <div class="chat__message-reaction message-reaction">
+                  <button class="message-reaction__icon-wrapper">
+                    <i class="fa fa-smile-o message-reaction__icon"></i>
+                  </button>
+                  <button class="message-reaction__icon-wrapper">
+                    <i class="fa fa-commenting-o message-reaction__icon"></i>
+                  </button>
+                  <button class="message-reaction__icon-wrapper">
+                    <i class="fa fa-reply fa-flip-horizontal message-reaction__icon"></i>
+                  </button>
+                  <button class="message-reaction__icon-wrapper">
+                    <i class="fa fa-bookmark-o message-reaction__icon"></i>
+                  </button>
+                  <button class="message-reaction__icon-wrapper">
+                    <i class="material-icons">more_vert</i>
+                    <!-- <i class="fa  fa-ellipsis-v"></i> -->
+                  </button>
+                </div>
+
+              </div>
+            
+
+              <div class="chat__message message">
+              <div class="message__user-avatar">
+                <img src="/img//01.jpg" width="36px" height="36px" alt="" class="message__user-avatar-01">
+              </div>
+              <div class="message__content">
+                <div class="message__header">
+                  <h3 class="message__author">Petr Shumskiy</h3>
+                  <span class="message__time-send">1:45 PM</span>
+                </div>
+                <p class="message__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, obcaecati!</p>
+                <div class="message__reactions reactions">
+                  <div class="reactions__reaction">
+                    <img class="reactions__emoji_small" src="https://a.slack-edge.com/production-standard-emoji-assets/10.2/google-small/1f44d@2x.png" alt="">
+                    <span class="reactions__counter">7</span>
+                  </div>
+                  <div class="reactions__reaction">
+                    <i class="material-icons reactions__face-icon">tag_faces</i> 
+                  </div>
+                  <div class="reactions__add-reaction">
+                    add-reaction
+                  </div>
+                </div>
+              </div>
+
+                <div class="chat__message-reaction message-reaction">
+                  <button class="message-reaction__icon-wrapper">
+                    <i class="fa fa-smile-o message-reaction__icon"></i>
+                  </button>
+                  <button class="message-reaction__icon-wrapper">
+                    <i class="fa fa-commenting-o message-reaction__icon"></i>
+                  </button>
+                  <button class="message-reaction__icon-wrapper">
+                    <i class="fa fa-reply fa-flip-horizontal message-reaction__icon"></i>
+                  </button>
+                  <button class="message-reaction__icon-wrapper">
+                    <i class="fa fa-bookmark-o message-reaction__icon"></i>
+                  </button>
+                  <button class="message-reaction__icon-wrapper">
+                    <i class="material-icons">more_vert</i>
+                    <!-- <i class="fa  fa-ellipsis-v"></i> -->
+                  </button>
+                </div>
+              </div>
+                     
+              <div class="chat__message message">
+                <div class="message__user-avatar">
+                  <img src="/img//01.jpg" width="36px" height="36px" alt="" class="message__user-avatar-01">
+                </div>
+                <div class="message__content">
+                  <div class="message__header">
+                    <h3 class="message__author">Petr Shumskiy</h3>
+                    <span class="message__time-send">1:45 PM</span>
+                  </div>
+                  <p class="message__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, obcaecati!</p>
+                  <div class="message__reactions reactions">
+                    <div class="reactions__reaction">
+                      <img class="reactions__emoji_small" src="https://a.slack-edge.com/production-standard-emoji-assets/10.2/google-small/1f44d@2x.png" alt="">
+                      <span class="reactions__counter">7</span>
+                    </div>
+                    <div class="reactions__reaction">
+                      <i class="material-icons reactions__face-icon">tag_faces</i> 
+                    </div>
+                    <div class="reactions__add-reaction">
+                      add-reaction
+                    </div>
+                  </div>
+                  <div class="chat__message-reaction message-reaction">
+                    <button class="message-reaction__icon-wrapper">
+                      <i class="fa fa-smile-o message-reaction__icon"></i>
+                    </button>
+                    <button class="message-reaction__icon-wrapper">
+                      <i class="fa fa-commenting-o message-reaction__icon"></i>
+                    </button>
+                    <button class="message-reaction__icon-wrapper">
+                      <i class="fa fa-reply fa-flip-horizontal message-reaction__icon"></i>
+                    </button>
+                    <button class="message-reaction__icon-wrapper">
+                      <i class="fa fa-bookmark-o message-reaction__icon"></i>
+                    </button>
+                    <button class="message-reaction__icon-wrapper">
+                      <i class="material-icons">more_vert</i>
+                      <!-- <i class="fa  fa-ellipsis-v"></i> -->
+                    </button>
+                  </div>
+
+
+                </div>
+              </div>
+          </div>
+
+            <div class="chat__day">
+
+              <hr class="chat__divider-line">
+              <button class="chat__date-sticky">
+                Friday,June 27th
+              </button>    
+
+              <div class="chat__message message message_first">
+              <div class="message__user-avatar">
+                <img src="/img//01.jpg" width="36px" height="36px" alt="" class="message__user-avatar-01">
+              </div>
+              <div class="message__content">
+                <div class="message__header">
+                  <h3 class="message__author">Petr Shumskiy</h3>
+                  <span class="message__time-send">1:45 PM</span>
+                </div>
+                <p class="message__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, obcaecati!</p>
+                <div class="message__reactions reactions">
+                  <div class="reactions__reaction">
+                    <img class="reactions__emoji_small" src="https://a.slack-edge.com/production-standard-emoji-assets/10.2/google-small/1f44d@2x.png" alt="">
+                    <span class="reactions__counter">7</span>
+                  </div>
+                  <div class="reactions__reaction">
+                    <i class="material-icons reactions__face-icon">tag_faces</i> 
+                  </div>
+                  <div class="reactions__add-reaction">
+                    add-reaction
+                  </div>
+                </div>
+              </div>
+                <div class="chat__message-reaction message-reaction">
+                  <button class="message-reaction__icon-wrapper">
+                    <i class="fa fa-smile-o message-reaction__icon"></i>
+                  </button>
+                  <button class="message-reaction__icon-wrapper">
+                    <i class="fa fa-commenting-o message-reaction__icon"></i>
+                  </button>
+                  <button class="message-reaction__icon-wrapper">
+                    <i class="fa fa-reply fa-flip-horizontal message-reaction__icon"></i>
+                  </button>
+                  <button class="message-reaction__icon-wrapper">
+                    <i class="fa fa-bookmark-o message-reaction__icon"></i>
+                  </button>
+                  <button class="message-reaction__icon-wrapper">
+                    <i class="material-icons">more_vert</i>
+                    <!-- <i class="fa  fa-ellipsis-v"></i> -->
+                  </button>
+                </div>
+
+
+              </div>
+                   
+              <div class="chat__message message">
+              <div class="message__user-avatar">
+                <img src="/img//01.jpg" width="36px" height="36px" alt="" class="message__user-avatar-01">
+              </div>
+              <div class="message__content">
+                <div class="message__header">
+                  <h3 class="message__author">Petr Shumskiy</h3>
+                  <span class="message__time-send">1:45 PM</span>
+                </div>
+                <p class="message__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, obcaecati!</p>
+                <div class="message__reactions reactions">
+                  <div class="reactions__reaction">
+                    <img class="reactions__emoji_small" src="https://a.slack-edge.com/production-standard-emoji-assets/10.2/google-small/1f44d@2x.png" alt="">
+                    <span class="reactions__counter">7</span>
+                  </div>
+                  <div class="reactions__reaction">
+                    <i class="material-icons reactions__face-icon">tag_faces</i> 
+                  </div>
+                  <div class="reactions__add-reaction">
+                    add-reaction
+                  </div>
+                </div>
+              </div>
+                <div class="chat__message-reaction message-reaction">
+                  <button class="message-reaction__icon-wrapper">
+                    <i class="fa fa-smile-o message-reaction__icon"></i>
+                  </button>
+                  <button class="message-reaction__icon-wrapper">
+                    <i class="fa fa-commenting-o message-reaction__icon"></i>
+                  </button>
+                  <button class="message-reaction__icon-wrapper">
+                    <i class="fa fa-reply fa-flip-horizontal message-reaction__icon"></i>
+                  </button>
+                  <button class="message-reaction__icon-wrapper">
+                    <i class="fa fa-bookmark-o message-reaction__icon"></i>
+                  </button>
+                  <button class="message-reaction__icon-wrapper">
+                    <i class="material-icons">more_vert</i>
+                    <!-- <i class="fa  fa-ellipsis-v"></i> -->
+                  </button>
+                </div>
+
+
+              </div>
+                   
+              <div class="chat__message message">
+              <div class="message__user-avatar">
+                <img src="/img//01.jpg" width="36px" height="36px" alt="" class="message__user-avatar-01">
+              </div>
+              <div class="message__content">
+                <div class="message__header">
+                  <h3 class="message__author">Petr Shumskiy</h3>
+                  <span class="message__time-send">1:45 PM</span>
+                </div>
+                <p class="message__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, obcaecati!</p>
+                <div class="message__reactions reactions">
+                  <div class="reactions__reaction">
+                    <img class="reactions__emoji_small" src="https://a.slack-edge.com/production-standard-emoji-assets/10.2/google-small/1f44d@2x.png" alt="">
+                    <span class="reactions__counter">7</span>
+                  </div>
+                  <div class="reactions__reaction">
+                    <i class="material-icons reactions__face-icon">tag_faces</i> 
+                  </div>
+                  <div class="reactions__add-reaction">
+                    add-reaction
+                  </div>
+                </div>
+              </div>
+                <div class="chat__message-reaction message-reaction">
+                  <button class="message-reaction__icon-wrapper">
+                    <i class="fa fa-smile-o message-reaction__icon"></i>
+                  </button>
+                  <button class="message-reaction__icon-wrapper">
+                    <i class="fa fa-commenting-o message-reaction__icon"></i>
+                  </button>
+                  <button class="message-reaction__icon-wrapper">
+                    <i class="fa fa-reply fa-flip-horizontal message-reaction__icon"></i>
+                  </button>
+                  <button class="message-reaction__icon-wrapper">
+                    <i class="fa fa-bookmark-o message-reaction__icon"></i>
+                  </button>
+                  <button class="message-reaction__icon-wrapper">
+                    <i class="material-icons">more_vert</i>
+                    <!-- <i class="fa  fa-ellipsis-v"></i> -->
+                  </button>
+                </div>
+
+
+              </div>
+
+            </div>
+
+            
+              <div class="chat__day">
+
+                <hr class="chat__divider-line">
+                <button class="chat__date-sticky">
+                  Friday,June 28th
+                </button> 
+
+
+              <div class="chat__message message message_first">
+              <div class="message__user-avatar">
+                <img src="/img//01.jpg" width="36px" height="36px" alt="" class="message__user-avatar-01">
+              </div>
+              <div class="message__content">
+                <div class="message__header">
+                  <h3 class="message__author">Petr Shumskiy</h3>
+                  <span class="message__time-send">1:45 PM</span>
+                </div>
+                <p class="message__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, obcaecati!</p>
+                <div class="message__reactions reactions">
+                  <div class="reactions__reaction">
+                    <img class="reactions__emoji_small" src="https://a.slack-edge.com/production-standard-emoji-assets/10.2/google-small/1f44d@2x.png" alt="">
+                    <span class="reactions__counter">7</span>
+                  </div>
+                  <div class="reactions__reaction">
+                    <i class="material-icons reactions__face-icon">tag_faces</i> 
+                  </div>
+                  <div class="reactions__add-reaction">
+                    add-reaction
+                  </div>
+                </div>
+              </div>
+                <div class="chat__message-reaction message-reaction">
+                  <button class="message-reaction__icon-wrapper">
+                    <i class="fa fa-smile-o message-reaction__icon"></i>
+                  </button>
+                  <button class="message-reaction__icon-wrapper">
+                    <i class="fa fa-commenting-o message-reaction__icon"></i>
+                  </button>
+                  <button class="message-reaction__icon-wrapper">
+                    <i class="fa fa-reply fa-flip-horizontal message-reaction__icon"></i>
+                  </button>
+                  <button class="message-reaction__icon-wrapper">
+                    <i class="fa fa-bookmark-o message-reaction__icon"></i>
+                  </button>
+                  <button class="message-reaction__icon-wrapper">
+                    <i class="material-icons">more_vert</i>
+                    <!-- <i class="fa  fa-ellipsis-v"></i> -->
+                  </button>
+                </div>
+
+
+              </div>
+                   
+              <div class="chat__message message">
+              <div class="message__user-avatar">
+                <img src="/img//01.jpg" width="36px" height="36px" alt="" class="message__user-avatar-01">
+              </div>
+              <div class="message__content">
+                <div class="message__header">
+                  <h3 class="message__author">Petr Shumskiy</h3>
+                  <span class="message__time-send">1:45 PM</span>
+                </div>
+                <p class="message__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, obcaecati!</p>
+                <div class="message__reactions reactions">
+                  <div class="reactions__reaction">
+                    <img class="reactions__emoji_small" src="https://a.slack-edge.com/production-standard-emoji-assets/10.2/google-small/1f44d@2x.png" alt="">
+                    <span class="reactions__counter">7</span>
+                  </div>
+                  <div class="reactions__reaction">
+                    <i class="material-icons reactions__face-icon">tag_faces</i> 
+                  </div>
+                  <div class="reactions__add-reaction">
+                    add-reaction
+                  </div>
+                </div>
+              </div>
+                <div class="chat__message-reaction message-reaction">
+                  <button class="message-reaction__icon-wrapper">
+                    <i class="fa fa-smile-o message-reaction__icon"></i>
+                  </button>
+                  <button class="message-reaction__icon-wrapper">
+                    <i class="fa fa-commenting-o message-reaction__icon"></i>
+                  </button>
+                  <button class="message-reaction__icon-wrapper">
+                    <i class="fa fa-reply fa-flip-horizontal message-reaction__icon"></i>
+                  </button>
+                  <button class="message-reaction__icon-wrapper">
+                    <i class="fa fa-bookmark-o message-reaction__icon"></i>
+                  </button>
+                  <button class="message-reaction__icon-wrapper">
+                    <i class="material-icons">more_vert</i>
+                    <!-- <i class="fa  fa-ellipsis-v"></i> -->
+                  </button>
+                </div>
+
+
+              </div>
+                   
+              <div class="chat__message message">
               <div class="message__user-avatar">
                 <img src="/img//01.jpg" width="36px" height="36px" alt="" class="message__user-avatar-01">
               </div>
@@ -198,569 +611,184 @@
                   <span class="message__time-send">1:45 PM</span>
                 </div>
                 <p class="message__text">
-                  Так много кандидатов на frontend)))<br>
-                  А матёрые бэкэндеры на месте?)
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti culpa optio, quibusdam praesentium laudantium dolor nihil doloribus necessitatibus atque rem molestias aut maxime quis ea soluta beatae est provident, exercitationem laborum nesciunt voluptates odio harum deserunt.<br>
+                  Dolorem consequuntur reprehenderit soluta ea libero repellat ipsa, dolore eum, incidunt error sit nam, minima autem. Error voluptatum ipsa libero corporis molestiae laborum nihil, cum ab ipsam perspiciatis placeat, pariatur minima numquam quisquam.<br>
+                  Deleniti, repellendus? Nobis, possimus. Voluptatibus explicabo id numquam adipisci ad alias magnam? Harum eligendi nulla rerum optio reprehenderit ad voluptates iste, dolore eius! Veritatis repellat excepturi ipsa quis velit. Ad quasi fugit temporibus aspernatur placeat consectetur quos!<br>
+                  Quas ullam fuga ipsa exercitationem repellat architecto tempore corporis, iste incidunt est a sapiente, quis odio corrupti et voluptates maiores aliquid saepe quo? Dolore, iure, aut doloremque illum eos veniam harum officia molestias cum facere itaque? Veritatis sint eius doloremque, libero aperiam laborum dolor recusandae totam? Amet, tempore velit, temporibus voluptas ab, nostrum aut vero delectus molestias doloremque unde excepturi fugiat et obcaecati. Laboriosam amet doloribus corporis tenetur reiciendis?<br>
+                  Et ab totam unde perferendis quos! Quam, praesentium esse deleniti nisi, eos eius sequi error suscipit quidem expedita rerum nihil eum cumque aliquam perspiciatis dolore qui odio est nulla omnis maiores. Quod fuga molestiae reiciendis modi quidem, ad, aliquam recusandae temporibus nobis consequatur doloremque porro numquam, optio dolore rerum dignissimos? Voluptatem incidunt inventore necessitatibus quis porro suscipit dolores, architecto sed molestias amet nesciunt corrupti quia eligendi consectetur rem perferendis esse accusamus!<br>
+                  Maiores eaque quia quibusdam culpa illum a quam magni aliquid laboriosam officiis tempore quo id exercitationem distinctio, repudiandae, tempora mollitia! Consequatur esse delectus vel incidunt accusantium error animi hic voluptas officiis?<br>
+                  Sapiente cumque officiis magnam, nisi corporis voluptatibus aperiam omnis aliquam laboriosam. Explicabo iusto id porro quisquam? Esse, repellat? Delectus dolorem libero minus eveniet.
                 </p>
+
                 <div class="message__reactions reactions">
                   <div class="reactions__reaction">
                     <img class="reactions__emoji_small" src="https://a.slack-edge.com/production-standard-emoji-assets/10.2/google-small/1f44d@2x.png" alt="">
                     <span class="reactions__counter">7</span>
                   </div>
                   <div class="reactions__reaction">
-                    <img class="reactions__emoji_small" src="https://emoji.slack-edge.com/T015KT4HMFG/party_parrot/6d45a1c074928b60.gif" alt="">
-                    <span class="reactions__counter">2</span>
-                  </div>
-                  <div class="reactions__reaction reactions__reaction_add">
                     <i class="material-icons reactions__face-icon">tag_faces</i> 
                   </div>
+                  <div class="reactions__add-reaction">
+                    add-reaction
+                  </div>
                 </div>
               </div>
+                <div class="chat__message-reaction message-reaction">
+                  <button class="message-reaction__icon-wrapper">
+                    <i class="fa fa-smile-o message-reaction__icon"></i>
+                  </button>
+                  <button class="message-reaction__icon-wrapper">
+                    <i class="fa fa-commenting-o message-reaction__icon"></i>
+                  </button>
+                  <button class="message-reaction__icon-wrapper">
+                    <i class="fa fa-reply fa-flip-horizontal message-reaction__icon"></i>
+                  </button>
+                  <button class="message-reaction__icon-wrapper">
+                    <i class="fa fa-bookmark-o message-reaction__icon"></i>
+                  </button>
+                  <button class="message-reaction__icon-wrapper">
+                    <i class="material-icons">more_vert</i>
+                    <!-- <i class="fa  fa-ellipsis-v"></i> -->
+                  </button>
+                </div>
 
-              <div class="chat__message-reaction message-reaction">
-                <button class="message-reaction__icon-wrapper">
-                  <i class="fa fa-smile-o message-reaction__icon"></i>
-                </button>
-                <button class="message-reaction__icon-wrapper">
-                  <i class="fa fa-commenting-o message-reaction__icon"></i>
-                </button>
-                <button class="message-reaction__icon-wrapper">
-                  <i class="fa fa-reply fa-flip-horizontal message-reaction__icon"></i>
-                </button>
-                <button class="message-reaction__icon-wrapper">
-                  <i class="fa fa-bookmark-o message-reaction__icon"></i>
-                </button>
-                <button class="message-reaction__icon-wrapper">
-                  <i class="material-icons">more_vert</i>
-                  <!-- <i class="fa  fa-ellipsis-v"></i> -->
-                </button>
-               </div>
 
-            </div>
-            
-
-            <div class="chat__message message">
-            <div class="message__user-avatar">
-              <img src="/img//01.jpg" width="36px" height="36px" alt="" class="message__user-avatar-01">
-            </div>
-            <div class="message__content">
-              <div class="message__header">
-                <h3 class="message__author">Petr Shumskiy</h3>
-                <span class="message__time-send">1:45 PM</span>
               </div>
-              <p class="message__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, obcaecati!</p>
-              <div class="message__reactions reactions">
-                <div class="reactions__reaction">
-                  <img class="reactions__emoji_small" src="https://a.slack-edge.com/production-standard-emoji-assets/10.2/google-small/1f44d@2x.png" alt="">
-                  <span class="reactions__counter">7</span>
-                </div>
-                <div class="reactions__reaction">
-                  <i class="material-icons reactions__face-icon">tag_faces</i> 
-                </div>
-                <div class="reactions__add-reaction">
-                  add-reaction
-                </div>
-              </div>
-            </div>
-
-              <div class="chat__message-reaction message-reaction">
-                <button class="message-reaction__icon-wrapper">
-                  <i class="fa fa-smile-o message-reaction__icon"></i>
-                </button>
-                <button class="message-reaction__icon-wrapper">
-                  <i class="fa fa-commenting-o message-reaction__icon"></i>
-                </button>
-                <button class="message-reaction__icon-wrapper">
-                  <i class="fa fa-reply fa-flip-horizontal message-reaction__icon"></i>
-                </button>
-                <button class="message-reaction__icon-wrapper">
-                  <i class="fa fa-bookmark-o message-reaction__icon"></i>
-                </button>
-                <button class="message-reaction__icon-wrapper">
-                  <i class="material-icons">more_vert</i>
-                  <!-- <i class="fa  fa-ellipsis-v"></i> -->
-                </button>
-               </div>
-            </div>
-                     
-            <div class="chat__message message">
-            <div class="message__user-avatar">
-              <img src="/img//01.jpg" width="36px" height="36px" alt="" class="message__user-avatar-01">
-            </div>
-            <d class="message__content">
-              <div class="message__header">
-                <h3 class="message__author">Petr Shumskiy</h3>
-                <span class="message__time-send">1:45 PM</span>
-              </div>
-              <p class="message__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, obcaecati!</p>
-              <div class="message__reactions reactions">
-                <div class="reactions__reaction">
-                  <img class="reactions__emoji_small" src="https://a.slack-edge.com/production-standard-emoji-assets/10.2/google-small/1f44d@2x.png" alt="">
-                  <span class="reactions__counter">7</span>
-                </div>
-                <div class="reactions__reaction">
-                  <i class="material-icons reactions__face-icon">tag_faces</i> 
-                </div>
-                <div class="reactions__add-reaction">
-                  add-reaction
-                </div>
-              </div>
-              <div class="chat__message-reaction message-reaction">
-                <button class="message-reaction__icon-wrapper">
-                  <i class="fa fa-smile-o message-reaction__icon"></i>
-                </button>
-                <button class="message-reaction__icon-wrapper">
-                  <i class="fa fa-commenting-o message-reaction__icon"></i>
-                </button>
-                <button class="message-reaction__icon-wrapper">
-                  <i class="fa fa-reply fa-flip-horizontal message-reaction__icon"></i>
-                </button>
-                <button class="message-reaction__icon-wrapper">
-                  <i class="fa fa-bookmark-o message-reaction__icon"></i>
-                </button>
-                <button class="message-reaction__icon-wrapper">
-                  <i class="material-icons">more_vert</i>
-                  <!-- <i class="fa  fa-ellipsis-v"></i> -->
-                </button>
-               </div>
-
-
-            </div>
-            </div>
-
-          <div class="chat__day">
-
-            <hr class="chat__divider-line">
-            <button class="chat__date-sticky">
-              Friday,June 27th
-            </button>    
-
-            <div class="chat__message message message_first">
-            <div class="message__user-avatar">
-              <img src="/img//01.jpg" width="36px" height="36px" alt="" class="message__user-avatar-01">
-            </div>
-            <div class="message__content">
-              <div class="message__header">
-                <h3 class="message__author">Petr Shumskiy</h3>
-                <span class="message__time-send">1:45 PM</span>
-              </div>
-              <p class="message__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, obcaecati!</p>
-              <div class="message__reactions reactions">
-                <div class="reactions__reaction">
-                  <img class="reactions__emoji_small" src="https://a.slack-edge.com/production-standard-emoji-assets/10.2/google-small/1f44d@2x.png" alt="">
-                  <span class="reactions__counter">7</span>
-                </div>
-                <div class="reactions__reaction">
-                  <i class="material-icons reactions__face-icon">tag_faces</i> 
-                </div>
-                <div class="reactions__add-reaction">
-                  add-reaction
-                </div>
-              </div>
-            </div>
-              <div class="chat__message-reaction message-reaction">
-                <button class="message-reaction__icon-wrapper">
-                  <i class="fa fa-smile-o message-reaction__icon"></i>
-                </button>
-                <button class="message-reaction__icon-wrapper">
-                  <i class="fa fa-commenting-o message-reaction__icon"></i>
-                </button>
-                <button class="message-reaction__icon-wrapper">
-                  <i class="fa fa-reply fa-flip-horizontal message-reaction__icon"></i>
-                </button>
-                <button class="message-reaction__icon-wrapper">
-                  <i class="fa fa-bookmark-o message-reaction__icon"></i>
-                </button>
-                <button class="message-reaction__icon-wrapper">
-                  <i class="material-icons">more_vert</i>
-                  <!-- <i class="fa  fa-ellipsis-v"></i> -->
-                </button>
-               </div>
-
-
-            </div>
-                   
-            <div class="chat__message message">
-            <div class="message__user-avatar">
-              <img src="/img//01.jpg" width="36px" height="36px" alt="" class="message__user-avatar-01">
-            </div>
-            <div class="message__content">
-              <div class="message__header">
-                <h3 class="message__author">Petr Shumskiy</h3>
-                <span class="message__time-send">1:45 PM</span>
-              </div>
-              <p class="message__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, obcaecati!</p>
-              <div class="message__reactions reactions">
-                <div class="reactions__reaction">
-                  <img class="reactions__emoji_small" src="https://a.slack-edge.com/production-standard-emoji-assets/10.2/google-small/1f44d@2x.png" alt="">
-                  <span class="reactions__counter">7</span>
-                </div>
-                <div class="reactions__reaction">
-                  <i class="material-icons reactions__face-icon">tag_faces</i> 
-                </div>
-                <div class="reactions__add-reaction">
-                  add-reaction
-                </div>
-              </div>
-            </div>
-              <div class="chat__message-reaction message-reaction">
-                <button class="message-reaction__icon-wrapper">
-                  <i class="fa fa-smile-o message-reaction__icon"></i>
-                </button>
-                <button class="message-reaction__icon-wrapper">
-                  <i class="fa fa-commenting-o message-reaction__icon"></i>
-                </button>
-                <button class="message-reaction__icon-wrapper">
-                  <i class="fa fa-reply fa-flip-horizontal message-reaction__icon"></i>
-                </button>
-                <button class="message-reaction__icon-wrapper">
-                  <i class="fa fa-bookmark-o message-reaction__icon"></i>
-                </button>
-                <button class="message-reaction__icon-wrapper">
-                  <i class="material-icons">more_vert</i>
-                  <!-- <i class="fa  fa-ellipsis-v"></i> -->
-                </button>
-               </div>
-
-
-            </div>
-                   
-            <div class="chat__message message">
-            <div class="message__user-avatar">
-              <img src="/img//01.jpg" width="36px" height="36px" alt="" class="message__user-avatar-01">
-            </div>
-            <div class="message__content">
-              <div class="message__header">
-                <h3 class="message__author">Petr Shumskiy</h3>
-                <span class="message__time-send">1:45 PM</span>
-              </div>
-              <p class="message__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, obcaecati!</p>
-              <div class="message__reactions reactions">
-                <div class="reactions__reaction">
-                  <img class="reactions__emoji_small" src="https://a.slack-edge.com/production-standard-emoji-assets/10.2/google-small/1f44d@2x.png" alt="">
-                  <span class="reactions__counter">7</span>
-                </div>
-                <div class="reactions__reaction">
-                  <i class="material-icons reactions__face-icon">tag_faces</i> 
-                </div>
-                <div class="reactions__add-reaction">
-                  add-reaction
-                </div>
-              </div>
-            </div>
-              <div class="chat__message-reaction message-reaction">
-                <button class="message-reaction__icon-wrapper">
-                  <i class="fa fa-smile-o message-reaction__icon"></i>
-                </button>
-                <button class="message-reaction__icon-wrapper">
-                  <i class="fa fa-commenting-o message-reaction__icon"></i>
-                </button>
-                <button class="message-reaction__icon-wrapper">
-                  <i class="fa fa-reply fa-flip-horizontal message-reaction__icon"></i>
-                </button>
-                <button class="message-reaction__icon-wrapper">
-                  <i class="fa fa-bookmark-o message-reaction__icon"></i>
-                </button>
-                <button class="message-reaction__icon-wrapper">
-                  <i class="material-icons">more_vert</i>
-                  <!-- <i class="fa  fa-ellipsis-v"></i> -->
-                </button>
-               </div>
-
-
-            </div>
-
-          </div>
-
-            
-            <div class="chat__day">
-
-              <hr class="chat__divider-line">
-              <button class="chat__date-sticky">
-                Friday,June 28th
-              </button> 
-
-
-            <div class="chat__message message message_first">
-            <div class="message__user-avatar">
-              <img src="/img//01.jpg" width="36px" height="36px" alt="" class="message__user-avatar-01">
-            </div>
-            <div class="message__content">
-              <div class="message__header">
-                <h3 class="message__author">Petr Shumskiy</h3>
-                <span class="message__time-send">1:45 PM</span>
-              </div>
-              <p class="message__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, obcaecati!</p>
-              <div class="message__reactions reactions">
-                <div class="reactions__reaction">
-                  <img class="reactions__emoji_small" src="https://a.slack-edge.com/production-standard-emoji-assets/10.2/google-small/1f44d@2x.png" alt="">
-                  <span class="reactions__counter">7</span>
-                </div>
-                <div class="reactions__reaction">
-                  <i class="material-icons reactions__face-icon">tag_faces</i> 
-                </div>
-                <div class="reactions__add-reaction">
-                  add-reaction
-                </div>
-              </div>
-            </div>
-              <div class="chat__message-reaction message-reaction">
-                <button class="message-reaction__icon-wrapper">
-                  <i class="fa fa-smile-o message-reaction__icon"></i>
-                </button>
-                <button class="message-reaction__icon-wrapper">
-                  <i class="fa fa-commenting-o message-reaction__icon"></i>
-                </button>
-                <button class="message-reaction__icon-wrapper">
-                  <i class="fa fa-reply fa-flip-horizontal message-reaction__icon"></i>
-                </button>
-                <button class="message-reaction__icon-wrapper">
-                  <i class="fa fa-bookmark-o message-reaction__icon"></i>
-                </button>
-                <button class="message-reaction__icon-wrapper">
-                  <i class="material-icons">more_vert</i>
-                  <!-- <i class="fa  fa-ellipsis-v"></i> -->
-                </button>
-               </div>
-
-
-            </div>
-                   
-            <div class="chat__message message">
-            <div class="message__user-avatar">
-              <img src="/img//01.jpg" width="36px" height="36px" alt="" class="message__user-avatar-01">
-            </div>
-            <div class="message__content">
-              <div class="message__header">
-                <h3 class="message__author">Petr Shumskiy</h3>
-                <span class="message__time-send">1:45 PM</span>
-              </div>
-              <p class="message__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, obcaecati!</p>
-              <div class="message__reactions reactions">
-                <div class="reactions__reaction">
-                  <img class="reactions__emoji_small" src="https://a.slack-edge.com/production-standard-emoji-assets/10.2/google-small/1f44d@2x.png" alt="">
-                  <span class="reactions__counter">7</span>
-                </div>
-                <div class="reactions__reaction">
-                  <i class="material-icons reactions__face-icon">tag_faces</i> 
-                </div>
-                <div class="reactions__add-reaction">
-                  add-reaction
-                </div>
-              </div>
-            </div>
-              <div class="chat__message-reaction message-reaction">
-                <button class="message-reaction__icon-wrapper">
-                  <i class="fa fa-smile-o message-reaction__icon"></i>
-                </button>
-                <button class="message-reaction__icon-wrapper">
-                  <i class="fa fa-commenting-o message-reaction__icon"></i>
-                </button>
-                <button class="message-reaction__icon-wrapper">
-                  <i class="fa fa-reply fa-flip-horizontal message-reaction__icon"></i>
-                </button>
-                <button class="message-reaction__icon-wrapper">
-                  <i class="fa fa-bookmark-o message-reaction__icon"></i>
-                </button>
-                <button class="message-reaction__icon-wrapper">
-                  <i class="material-icons">more_vert</i>
-                  <!-- <i class="fa  fa-ellipsis-v"></i> -->
-                </button>
-               </div>
-
-
-            </div>
-                   
-            <div class="chat__message message">
-            <div class="message__user-avatar">
-              <img src="/img//01.jpg" width="36px" height="36px" alt="" class="message__user-avatar-01">
-            </div>
-            <div class="message__content">
-              <div class="message__header">
-                <h3 class="message__author">Petr Shumskiy</h3>
-                <span class="message__time-send">1:45 PM</span>
-              </div>
-              <p class="message__text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti culpa optio, quibusdam praesentium laudantium dolor nihil doloribus necessitatibus atque rem molestias aut maxime quis ea soluta beatae est provident, exercitationem laborum nesciunt voluptates odio harum deserunt.<br>
-                Dolorem consequuntur reprehenderit soluta ea libero repellat ipsa, dolore eum, incidunt error sit nam, minima autem. Error voluptatum ipsa libero corporis molestiae laborum nihil, cum ab ipsam perspiciatis placeat, pariatur minima numquam quisquam.<br>
-                Deleniti, repellendus? Nobis, possimus. Voluptatibus explicabo id numquam adipisci ad alias magnam? Harum eligendi nulla rerum optio reprehenderit ad voluptates iste, dolore eius! Veritatis repellat excepturi ipsa quis velit. Ad quasi fugit temporibus aspernatur placeat consectetur quos!<br>
-                Quas ullam fuga ipsa exercitationem repellat architecto tempore corporis, iste incidunt est a sapiente, quis odio corrupti et voluptates maiores aliquid saepe quo? Dolore, iure, aut doloremque illum eos veniam harum officia molestias cum facere itaque? Veritatis sint eius doloremque, libero aperiam laborum dolor recusandae totam? Amet, tempore velit, temporibus voluptas ab, nostrum aut vero delectus molestias doloremque unde excepturi fugiat et obcaecati. Laboriosam amet doloribus corporis tenetur reiciendis?<br>
-                Et ab totam unde perferendis quos! Quam, praesentium esse deleniti nisi, eos eius sequi error suscipit quidem expedita rerum nihil eum cumque aliquam perspiciatis dolore qui odio est nulla omnis maiores. Quod fuga molestiae reiciendis modi quidem, ad, aliquam recusandae temporibus nobis consequatur doloremque porro numquam, optio dolore rerum dignissimos? Voluptatem incidunt inventore necessitatibus quis porro suscipit dolores, architecto sed molestias amet nesciunt corrupti quia eligendi consectetur rem perferendis esse accusamus!<br>
-                Maiores eaque quia quibusdam culpa illum a quam magni aliquid laboriosam officiis tempore quo id exercitationem distinctio, repudiandae, tempora mollitia! Consequatur esse delectus vel incidunt accusantium error animi hic voluptas officiis?<br>
-                Sapiente cumque officiis magnam, nisi corporis voluptatibus aperiam omnis aliquam laboriosam. Explicabo iusto id porro quisquam? Esse, repellat? Delectus dolorem libero minus eveniet.
-              </p>
-
-              <div class="message__reactions reactions">
-                <div class="reactions__reaction">
-                  <img class="reactions__emoji_small" src="https://a.slack-edge.com/production-standard-emoji-assets/10.2/google-small/1f44d@2x.png" alt="">
-                  <span class="reactions__counter">7</span>
-                </div>
-                <div class="reactions__reaction">
-                  <i class="material-icons reactions__face-icon">tag_faces</i> 
-                </div>
-                <div class="reactions__add-reaction">
-                  add-reaction
-                </div>
-              </div>
-            </div>
-              <div class="chat__message-reaction message-reaction">
-                <button class="message-reaction__icon-wrapper">
-                  <i class="fa fa-smile-o message-reaction__icon"></i>
-                </button>
-                <button class="message-reaction__icon-wrapper">
-                  <i class="fa fa-commenting-o message-reaction__icon"></i>
-                </button>
-                <button class="message-reaction__icon-wrapper">
-                  <i class="fa fa-reply fa-flip-horizontal message-reaction__icon"></i>
-                </button>
-                <button class="message-reaction__icon-wrapper">
-                  <i class="fa fa-bookmark-o message-reaction__icon"></i>
-                </button>
-                <button class="message-reaction__icon-wrapper">
-                  <i class="material-icons">more_vert</i>
-                  <!-- <i class="fa  fa-ellipsis-v"></i> -->
-                </button>
-               </div>
-
-
-            </div>
 
                    
-            <div class="chat__message message">
-            <div class="message__user-avatar">
-              <img src="/img//01.jpg" width="36px" height="36px" alt="" class="message__user-avatar-01">
-            </div>
-            <div class="message__content">
-              <div class="message__header">
-                <h3 class="message__author">Petr Shumskiy</h3>
-                <span class="message__time-send">1:45 PM</span>
+              <div class="chat__message message">
+              <div class="message__user-avatar">
+                <img src="/img//01.jpg" width="36px" height="36px" alt="" class="message__user-avatar-01">
               </div>
-              <p class="message__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, obcaecati!</p>
-              <div class="message__reactions reactions">
-                <div class="reactions__reaction">
-                  <img class="reactions__emoji_small" src="https://a.slack-edge.com/production-standard-emoji-assets/10.2/google-small/1f44d@2x.png" alt="">
-                  <span class="reactions__counter">7</span>
+              <div class="message__content">
+                <div class="message__header">
+                  <h3 class="message__author">Petr Shumskiy</h3>
+                  <span class="message__time-send">1:45 PM</span>
                 </div>
-                <div class="reactions__reaction">
-                  <i class="material-icons reactions__face-icon">tag_faces</i> 
-                </div>
-                <div class="reactions__add-reaction">
-                  add-reaction
+                <p class="message__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, obcaecati!</p>
+                <div class="message__reactions reactions">
+                  <div class="reactions__reaction">
+                    <img class="reactions__emoji_small" src="https://a.slack-edge.com/production-standard-emoji-assets/10.2/google-small/1f44d@2x.png" alt="">
+                    <span class="reactions__counter">7</span>
+                  </div>
+                  <div class="reactions__reaction">
+                    <i class="material-icons reactions__face-icon">tag_faces</i> 
+                  </div>
+                  <div class="reactions__add-reaction">
+                    add-reaction
+                  </div>
                 </div>
               </div>
-            </div>
-              <div class="chat__message-reaction message-reaction">
-                <button class="message-reaction__icon-wrapper">
-                  <i class="fa fa-smile-o message-reaction__icon"></i>
-                </button>
-                <button class="message-reaction__icon-wrapper">
-                  <i class="fa fa-commenting-o message-reaction__icon"></i>
-                </button>
-                <button class="message-reaction__icon-wrapper">
-                  <i class="fa fa-reply fa-flip-horizontal message-reaction__icon"></i>
-                </button>
-                <button class="message-reaction__icon-wrapper">
-                  <i class="fa fa-bookmark-o message-reaction__icon"></i>
-                </button>
-                <button class="message-reaction__icon-wrapper">
-                  <i class="material-icons">more_vert</i>
-                  <!-- <i class="fa  fa-ellipsis-v"></i> -->
-                </button>
-               </div>
+                <div class="chat__message-reaction message-reaction">
+                  <button class="message-reaction__icon-wrapper">
+                    <i class="fa fa-smile-o message-reaction__icon"></i>
+                  </button>
+                  <button class="message-reaction__icon-wrapper">
+                    <i class="fa fa-commenting-o message-reaction__icon"></i>
+                  </button>
+                  <button class="message-reaction__icon-wrapper">
+                    <i class="fa fa-reply fa-flip-horizontal message-reaction__icon"></i>
+                  </button>
+                  <button class="message-reaction__icon-wrapper">
+                    <i class="fa fa-bookmark-o message-reaction__icon"></i>
+                  </button>
+                  <button class="message-reaction__icon-wrapper">
+                    <i class="material-icons">more_vert</i>
+                    <!-- <i class="fa  fa-ellipsis-v"></i> -->
+                  </button>
+                </div>
 
 
-            </div>
+              </div>
                     
-            <div class="chat__message message">
-            <div class="message__user-avatar">
-              <img src="/img//01.jpg" width="36px" height="36px" alt="" class="message__user-avatar-01">
-            </div>
-            <div class="message__content">
-              <div class="message__header">
-                <h3 class="message__author">Petr Shumskiy</h3>
-                <span class="message__time-send">1:45 PM</span>
+              <div class="chat__message message">
+              <div class="message__user-avatar">
+                <img src="/img//01.jpg" width="36px" height="36px" alt="" class="message__user-avatar-01">
               </div>
-              <p class="message__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, obcaecati!</p>
-              <div class="message__reactions reactions">
-                <div class="reactions__reaction">
-                  <img class="reactions__emoji_small" src="https://a.slack-edge.com/production-standard-emoji-assets/10.2/google-small/1f44d@2x.png" alt="">
-                  <span class="reactions__counter">7</span>
+              <div class="message__content">
+                <div class="message__header">
+                  <h3 class="message__author">Petr Shumskiy</h3>
+                  <span class="message__time-send">1:45 PM</span>
                 </div>
-                <div class="reactions__reaction">
-                  <i class="material-icons reactions__face-icon">tag_faces</i> 
-                </div>
-                <div class="reactions__add-reaction">
-                  add-reaction
+                <p class="message__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, obcaecati!</p>
+                <div class="message__reactions reactions">
+                  <div class="reactions__reaction">
+                    <img class="reactions__emoji_small" src="https://a.slack-edge.com/production-standard-emoji-assets/10.2/google-small/1f44d@2x.png" alt="">
+                    <span class="reactions__counter">7</span>
+                  </div>
+                  <div class="reactions__reaction">
+                    <i class="material-icons reactions__face-icon">tag_faces</i> 
+                  </div>
+                  <div class="reactions__add-reaction">
+                    add-reaction
+                  </div>
                 </div>
               </div>
-            </div>
-              <div class="chat__message-reaction message-reaction">
-                <button class="message-reaction__icon-wrapper">
-                  <i class="fa fa-smile-o message-reaction__icon"></i>
-                </button>
-                <button class="message-reaction__icon-wrapper">
-                  <i class="fa fa-commenting-o message-reaction__icon"></i>
-                </button>
-                <button class="message-reaction__icon-wrapper">
-                  <i class="fa fa-reply fa-flip-horizontal message-reaction__icon"></i>
-                </button>
-                <button class="message-reaction__icon-wrapper">
-                  <i class="fa fa-bookmark-o message-reaction__icon"></i>
-                </button>
-                <button class="message-reaction__icon-wrapper">
-                  <i class="material-icons">more_vert</i>
-                  <!-- <i class="fa  fa-ellipsis-v"></i> -->
-                </button>
-               </div>
+                <div class="chat__message-reaction message-reaction">
+                  <button class="message-reaction__icon-wrapper">
+                    <i class="fa fa-smile-o message-reaction__icon"></i>
+                  </button>
+                  <button class="message-reaction__icon-wrapper">
+                    <i class="fa fa-commenting-o message-reaction__icon"></i>
+                  </button>
+                  <button class="message-reaction__icon-wrapper">
+                    <i class="fa fa-reply fa-flip-horizontal message-reaction__icon"></i>
+                  </button>
+                  <button class="message-reaction__icon-wrapper">
+                    <i class="fa fa-bookmark-o message-reaction__icon"></i>
+                  </button>
+                  <button class="message-reaction__icon-wrapper">
+                    <i class="material-icons">more_vert</i>
+                  </button>
+                </div>
 
 
-            </div>
+              </div>
          
-            <div class="chat__message message">
-            <div class="message__user-avatar">
-              <img src="/img//01.jpg" width="36px" height="36px" alt="" class="message__user-avatar-01">
-            </div>
-            <div class="message__content">
-              <div class="message__header">
-                <h3 class="message__author">Petr Shumskiy</h3>
-                <span class="message__time-send">1:45 PM</span>
+              <div class="chat__message message">
+              <div class="message__user-avatar">
+                <img src="/img//01.jpg" width="36px" height="36px" alt="" class="message__user-avatar-01">
               </div>
-              <p class="message__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, obcaecati!</p>
-              <div class="message__reactions reactions">
-                <div class="reactions__reaction">
-                  <img class="reactions__emoji_small" src="https://a.slack-edge.com/production-standard-emoji-assets/10.2/google-small/1f44d@2x.png" alt="">
-                  <span class="reactions__counter">7</span>
+              <div class="message__content">
+                <div class="message__header">
+                  <h3 class="message__author">Petr Shumskiy</h3>
+                  <span class="message__time-send">1:45 PM</span>
                 </div>
-                <div class="reactions__reaction">
-                  <i class="material-icons reactions__face-icon">tag_faces</i> 
-                </div>
-                <div class="reactions__add-reaction">
-                  add-reaction
+                <p class="message__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, obcaecati!</p>
+                <div class="message__reactions reactions">
+                  <div class="reactions__reaction">
+                    <img class="reactions__emoji_small" src="https://a.slack-edge.com/production-standard-emoji-assets/10.2/google-small/1f44d@2x.png" alt="">
+                    <span class="reactions__counter">7</span>
+                  </div>
+                  <div class="reactions__reaction">
+                    <i class="material-icons reactions__face-icon">tag_faces</i> 
+                  </div>
+                  <div class="reactions__add-reaction">
+                    add-reaction
+                  </div>
                 </div>
               </div>
+                <div class="chat__message-reaction message-reaction">
+                  <button class="message-reaction__icon-wrapper">
+                    <i class="fa fa-smile-o message-reaction__icon"></i>
+                  </button>
+                  <button class="message-reaction__icon-wrapper">
+                    <i class="fa fa-commenting-o message-reaction__icon"></i>
+                  </button>
+                  <button class="message-reaction__icon-wrapper">
+                    <i class="fa fa-reply fa-flip-horizontal message-reaction__icon"></i>
+                  </button>
+                  <button class="message-reaction__icon-wrapper">
+                    <i class="fa fa-bookmark-o message-reaction__icon"></i>
+                  </button>
+                  <button class="message-reaction__icon-wrapper">
+                    <i class="material-icons">more_vert</i>
+                    <!-- <i class="fa  fa-ellipsis-v"></i> -->
+                  </button>
+                </div>
+
+              </div>
             </div>
-              <div class="chat__message-reaction message-reaction">
-                <button class="message-reaction__icon-wrapper">
-                  <i class="fa fa-smile-o message-reaction__icon"></i>
-                </button>
-                <button class="message-reaction__icon-wrapper">
-                  <i class="fa fa-commenting-o message-reaction__icon"></i>
-                </button>
-                <button class="message-reaction__icon-wrapper">
-                  <i class="fa fa-reply fa-flip-horizontal message-reaction__icon"></i>
-                </button>
-                <button class="message-reaction__icon-wrapper">
-                  <i class="fa fa-bookmark-o message-reaction__icon"></i>
-                </button>
-                <button class="message-reaction__icon-wrapper">
-                  <i class="material-icons">more_vert</i>
-                  <!-- <i class="fa  fa-ellipsis-v"></i> -->
-                </button>
-               </div>
-
-
-            </div>
-
-          </div>
         </div>
 
         <div class="chat__footer pd20">
