@@ -21,8 +21,12 @@
       -ms-flex: auto;
           flex: auto;
   max-height: calc(100vh - 38px - 65px - 109px - 2px);
-  overflow-y: scroll;
+  overflow-y: hidden;
   font-size: 25px;
+}
+
+.chat__messages:hover {
+  overflow-y: overlay;
 }
 
 .chat__day {
@@ -70,6 +74,10 @@
   top: 5px;
   bottom: 5px;
   z-index: 1;
+}
+
+.chat__date-sticky:hover {
+  cursor: pointer;
 }
 
 .chat__date-sticky_first {

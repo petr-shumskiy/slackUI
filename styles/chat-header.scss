@@ -17,9 +17,31 @@
     font-weight: 900;
   }
 
+
   &__title_text {
     margin-left: 1px;
     margin-right: 4px;
+  }
+  
+  &__title_octocrop:hover, &__title_text:hover {
+    cursor: pointer;
+  }
+
+  &__star-icon-wrapper {
+    width: 20px;
+    height: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: background-color .16s cubic-bezier(.36,.19,.29,1),color .16s cubic-bezier(.36,.19,.29,1);
+    border-radius: 4px;
+  }
+
+  &__star-icon-wrapper:hover {
+    background-color: rgba(var(--sk_foreground_min,29,28,29),.04);
+    cursor: pointer;
   }
 
   &__star-icon {
@@ -51,6 +73,7 @@
     color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
     border-radius: 2px;
     transition: opacity .2s, background-color .2s, color .2s;
+    cursor: pointer;
   }
 
   &__details:focus {
@@ -82,6 +105,11 @@
     min-width: 39px;
   }
 
+  &__number-of-people:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
   &__vertical-line {
     opacity: .5;
     margin-right: 6px;
@@ -103,11 +131,13 @@
     display: inline-block;
   }
 
-  &__channel-describe:hover .chat-header__description-wrapper {
+  &__description-wrapper:hover {
     background: rgba(var(--sk_primary_background,255,255,255),1);
     --saf-0: rgba(var(--sk_foreground_low,29,28,29),0.13);
     box-shadow: inset 0 0 0 1px var(--saf-0),0 1px 1px 0 rgba(0,0,0,.05);
-    border-radius: 4px
+    border-radius: 4px;
+
+    cursor: pointer;
   }
 
   &__edit {
@@ -117,5 +147,6 @@
   }
   &__edit:hover {
     text-decoration: underline;
+    cursor: pointer;
   }
 }

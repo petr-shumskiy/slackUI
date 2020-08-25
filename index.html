@@ -65,15 +65,15 @@
           </button>
           <button class="aside-panel__item">
             <div class="aside-panel__icon-wrapper">
-              <i class="fa fa-at aside-panel__at-icon"></i>
-            </div>
-            <span class="item__text">Mentions & reactions</span>
-          </button>
-          <button class="aside-panel__item">
-            <div class="aside-panel__icon-wrapper">
               <i class="fa fa-files-o aside-panel__draft-icon"></i>
             </div>
             <span class="item__text">Drafts</span>
+          </button>
+          <button class="aside-panel__item">
+            <div class="aside-panel__icon-wrapper">
+              <i class="fa fa-at aside-panel__at-icon"></i>
+            </div>
+            <span class="item__text">Mentions & reactions</span>
           </button>
           <button class="aside-panel__item aside-panel__item_last aside-panel__item_no-background">
             <div class="aside-panel__icon-wrapper">
@@ -144,7 +144,9 @@
             </div>
           </button>
           <div class="aside-panel__item aside-panel__item_last aside-panel__item_deletable">
-            <i class="material-icons aside-panel__plus-icon">add</i>
+            <div class="aside-panel__icon-wrapper">
+              <i class="material-icons aside-panel__plus-icon">add</i>
+            </div>
             <span class="item__text">Invite people</span>
             <div class="aside-panel__icon-wrapper aside-panel__times-icon-wrapper">
               <i class="material-icons aside-panel__times-icon">clear</i>
@@ -187,7 +189,9 @@
               <h3 class="chat-header__title chat-header__title_text">
                 random
               </h3>
-              <i class="fa fa-star-o chat-header__star-icon"></i>
+              <div class="chat-header__star-icon-wrapper">
+                <i class="fa fa-star-o chat-header__star-icon"></i>
+              </div>
             </div>
             <div class="chat-header__meta-bottom">
               <div class="chat-header__number-of-people">
@@ -210,6 +214,9 @@
           <!-- Messages area -->
 
         </div>
+        
+        <!-- Messages -->
+
         <div class="chat__messages">
           <div class="chat__day">
 
@@ -286,9 +293,6 @@
                   <div class="reactions__reaction">
                     <i class="material-icons reactions__face-icon">tag_faces</i> 
                   </div>
-                  <div class="reactions__add-reaction">
-                    add-reaction
-                  </div>
                 </div>
               </div>
 
@@ -329,9 +333,6 @@
                     </div>
                     <div class="reactions__reaction">
                       <i class="material-icons reactions__face-icon">tag_faces</i> 
-                    </div>
-                    <div class="reactions__add-reaction">
-                      add-reaction
                     </div>
                   </div>
                   <div class="chat__message-reaction message-reaction">
@@ -383,9 +384,6 @@
                   <div class="reactions__reaction">
                     <i class="material-icons reactions__face-icon">tag_faces</i> 
                   </div>
-                  <div class="reactions__add-reaction">
-                    add-reaction
-                  </div>
                 </div>
               </div>
                 <div class="chat__message-reaction message-reaction">
@@ -428,9 +426,6 @@
                   <div class="reactions__reaction">
                     <i class="material-icons reactions__face-icon">tag_faces</i> 
                   </div>
-                  <div class="reactions__add-reaction">
-                    add-reaction
-                  </div>
                 </div>
               </div>
                 <div class="chat__message-reaction message-reaction">
@@ -472,9 +467,6 @@
                   </div>
                   <div class="reactions__reaction">
                     <i class="material-icons reactions__face-icon">tag_faces</i> 
-                  </div>
-                  <div class="reactions__add-reaction">
-                    add-reaction
                   </div>
                 </div>
               </div>
@@ -529,9 +521,6 @@
                   <div class="reactions__reaction">
                     <i class="material-icons reactions__face-icon">tag_faces</i> 
                   </div>
-                  <div class="reactions__add-reaction">
-                    add-reaction
-                  </div>
                 </div>
               </div>
                 <div class="chat__message-reaction message-reaction">
@@ -573,9 +562,6 @@
                   </div>
                   <div class="reactions__reaction">
                     <i class="material-icons reactions__face-icon">tag_faces</i> 
-                  </div>
-                  <div class="reactions__add-reaction">
-                    add-reaction
                   </div>
                 </div>
               </div>
@@ -628,9 +614,6 @@
                   <div class="reactions__reaction">
                     <i class="material-icons reactions__face-icon">tag_faces</i> 
                   </div>
-                  <div class="reactions__add-reaction">
-                    add-reaction
-                  </div>
                 </div>
               </div>
                 <div class="chat__message-reaction message-reaction">
@@ -674,9 +657,6 @@
                   <div class="reactions__reaction">
                     <i class="material-icons reactions__face-icon">tag_faces</i> 
                   </div>
-                  <div class="reactions__add-reaction">
-                    add-reaction
-                  </div>
                 </div>
               </div>
                 <div class="chat__message-reaction message-reaction">
@@ -719,9 +699,6 @@
                   <div class="reactions__reaction">
                     <i class="material-icons reactions__face-icon">tag_faces</i> 
                   </div>
-                  <div class="reactions__add-reaction">
-                    add-reaction
-                  </div>
                 </div>
               </div>
                 <div class="chat__message-reaction message-reaction">
@@ -763,9 +740,6 @@
                   <div class="reactions__reaction">
                     <i class="material-icons reactions__face-icon">tag_faces</i> 
                   </div>
-                  <div class="reactions__add-reaction">
-                    add-reaction
-                  </div>
                 </div>
               </div>
                 <div class="chat__message-reaction message-reaction">
@@ -791,9 +765,14 @@
             </div>
         </div>
 
+        <!-- Footer -->
+
         <div class="chat__footer pd20">
           <div class="chat__message-form message-form">
-            <input type="text" class="message-form__input-text pd10" placeholder="Message #channel">
+            <input type="text" class="message-form__input-text pd10" 
+            placeholder="Message #channel" 
+            onfocus="this.placeholder = ''"
+            >
             <div class="message-form__text-editing-menu">
               <div class="message-form__left-icons">
                 <button class="message-form__icon-wrapper">

@@ -67,6 +67,7 @@
   border-radius: 2px;
   -webkit-transition: opacity .2s, background-color .2s, color .2s;
   transition: opacity .2s, background-color .2s, color .2s;
+  cursor: pointer;
 }
 
 .message-form__icon-wrapper:focus {

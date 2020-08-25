@@ -46,6 +46,7 @@
 .header .left-nav__history-icon:hover {
   opacity: 1;
   background: #49254a;
+  cursor: pointer;
 }
 
 .header__search-menu {
@@ -77,6 +78,7 @@
   background: #431e44;
   -webkit-box-shadow: inset 1px 1px 0 0 #684a68, inset -1px -1px 0 0 #684a68;
           box-shadow: inset 1px 1px 0 0 #684a68, inset -1px -1px 0 0 #684a68;
+  cursor: pointer;
 }
 
 .header .search-menu__search-icon {
@@ -120,6 +122,7 @@
 .header .right-nav__question-icon-wrapper:hover {
   opacity: 1;
   background: #49254a;
+  cursor: pointer;
 }
 
 .header .right-nav__circle {

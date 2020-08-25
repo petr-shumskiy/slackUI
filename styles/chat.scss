@@ -13,8 +13,12 @@
     padding-bottom: 0;
     flex: auto;
     max-height: calc(100vh - 38px - 65px - 109px - 2px);
-    overflow-y: scroll;
+    overflow-y: hidden;
     font-size: 25px;
+  }
+
+  &__messages:hover {
+      overflow-y: overlay;
   }
 
   &__day {
@@ -55,6 +59,10 @@
     top: 5px;
     bottom: 5px;
     z-index: 1;
+  }
+
+  &__date-sticky:hover {
+    cursor: pointer;
   }
 
   &__date-sticky_first {

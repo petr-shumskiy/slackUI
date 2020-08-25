@@ -38,6 +38,11 @@
     margin-left: 7px;
   }
 
+  &__author:hover, &__time-send:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
 }
 
 .reactions {
@@ -60,7 +65,8 @@
   &__reaction:hover {
     --saf-0: rgba(var(--sk_foreground_high,29,28,29),0.5);
     box-shadow: inset 0 0 0 1px var(--saf-0);
-    background: rgba(var(--sk_primary_background,255,255,255),1)
+    background: rgba(var(--sk_primary_background,255,255,255),1);
+    cursor: pointer;
   }
   
   &__reaction_add {

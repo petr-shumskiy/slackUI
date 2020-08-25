@@ -25,6 +25,7 @@
   &__icon-wrapper:hover {
     background: rgba(var(--sk_foreground_min,29,28,29),.04);
     color: rgba(var(--sk_primary_foreground,29,28,29),1);
+    cursor: pointer;
   }
 
   &__icon {

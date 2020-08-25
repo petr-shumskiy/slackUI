@@ -38,6 +38,32 @@
   margin-right: 4px;
 }
 
+.chat-header__title_octocrop:hover, .chat-header__title_text:hover {
+  cursor: pointer;
+}
+
+.chat-header__star-icon-wrapper {
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: background-color 0.16s cubic-bezier(0.36, 0.19, 0.29, 1), color 0.16s cubic-bezier(0.36, 0.19, 0.29, 1);
+  transition: background-color 0.16s cubic-bezier(0.36, 0.19, 0.29, 1), color 0.16s cubic-bezier(0.36, 0.19, 0.29, 1);
+  border-radius: 4px;
+}
+
+.chat-header__star-icon-wrapper:hover {
+  background-color: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+  cursor: pointer;
+}
+
 .chat-header__star-icon {
   padding: 1px;
   font-size: 13px;
@@ -71,6 +97,7 @@
   border-radius: 2px;
   -webkit-transition: opacity .2s, background-color .2s, color .2s;
   transition: opacity .2s, background-color .2s, color .2s;
+  cursor: pointer;
 }
 
 .chat-header__details:focus {
@@ -112,6 +139,11 @@
   min-width: 39px;
 }
 
+.chat-header__number-of-people:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .chat-header__vertical-line {
   opacity: .5;
   margin-right: 6px;
@@ -137,12 +169,13 @@
   display: inline-block;
 }
 
-.chat-header__channel-describe:hover .chat-header__description-wrapper {
+.chat-header__description-wrapper:hover {
   background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
   --saf-0: rgba(var(--sk_foreground_low,29,28,29),0.13);
   -webkit-box-shadow: inset 0 0 0 1px var(--saf-0), 0 1px 1px 0 rgba(0, 0, 0, 0.05);
           box-shadow: inset 0 0 0 1px var(--saf-0), 0 1px 1px 0 rgba(0, 0, 0, 0.05);
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .chat-header__edit {
@@ -153,5 +186,6 @@
 
 .chat-header__edit:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 /*# sourceMappingURL=chat-header.css.map */

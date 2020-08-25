@@ -21,6 +21,19 @@ html, body {
   padding: 10px;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background: rgba(var(--sk_primary_foreground,29,28,29),.52);
+}
+
 @import 'styles/header';
 
 @import 'styles/app';
@@ -38,6 +51,8 @@ html, body {
 @import 'styles/message-reaction';
 
 @import 'styles/message-form';
+
+
 
 
 
