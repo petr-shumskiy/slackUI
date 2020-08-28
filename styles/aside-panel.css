@@ -9,7 +9,7 @@
           flex-direction: column;
   background: #3f0e40;
   color: #bcabbc;
-  overflow-y: hidden;
+  overflow-y: overlay;
   position: relative;
 }
 
