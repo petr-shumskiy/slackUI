@@ -1,5 +1,5 @@
 .aside-panel {
-  min-height: calc(100vh - 38px);
+  max-height: calc(100vh - 37px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9,7 +9,7 @@
           flex-direction: column;
   background: #3f0e40;
   color: #bcabbc;
-  overflow-y: overlay;
+  overflow-y: hidden;
   position: relative;
 }
 
@@ -247,6 +247,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.aside-panel:hover {
+  overflow-y: overlay;
 }
 
 .item__text {

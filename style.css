@@ -25,19 +25,6 @@ html, body {
   padding: 10px;
 }
 
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 4px;
-  background: rgba(var(--sk_primary_foreground, 29, 28, 29), 0.52);
-}
-
 .header {
   min-height: 38px;
   display: -webkit-box;
@@ -186,9 +173,7 @@ html, body {
 }
 
 .app {
-  -webkit-box-flex: 1;
-      -ms-flex: auto;
-          flex: auto;
+  min-height: calc(100vh - 38px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -206,7 +191,7 @@ html, body {
 }
 
 .aside-panel {
-  min-height: calc(100vh - 38px);
+  max-height: calc(100vh - 37px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -216,7 +201,7 @@ html, body {
           flex-direction: column;
   background: #3f0e40;
   color: #bcabbc;
-  overflow-y: overlay;
+  overflow-y: hidden;
   position: relative;
 }
 
@@ -454,6 +439,10 @@ html, body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.aside-panel:hover {
+  overflow-y: overlay;
 }
 
 .item__text {
@@ -1050,5 +1039,22 @@ html, body {
 
 .message-form__attachment-icon {
   font-size: 17px;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background: rgba(var(--sk_primary_foreground, 29, 28, 29), 0.52);
+}
+
+.aside-panel::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.4);
 }
 /*# sourceMappingURL=style.css.map */

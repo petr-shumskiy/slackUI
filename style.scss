@@ -21,18 +21,6 @@ html, body {
   padding: 10px;
 }
 
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 4px;
-  background: rgba(var(--sk_primary_foreground,29,28,29),.52);
-}
 
 @import 'styles/header';
 
@@ -53,6 +41,22 @@ html, body {
 @import 'styles/message-form';
 
 
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background: rgba(var(--sk_primary_foreground,29,28,29),.52);
+}
+
+.aside-panel::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.4);
+}
 
 
 

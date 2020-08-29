@@ -1,7 +1,5 @@
 .app {
-  -webkit-box-flex: 1;
-      -ms-flex: auto;
-          flex: auto;
+  min-height: calc(100vh - 38px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
